@@ -1,3 +1,10 @@
+/* 	Built from a mobile-first perspective, the CSS below
+	pertains to the styles of smaller mobile phone screensizes
+	in Chrome Developer tools (Mobile-S 320px). The CSS code
+	for styling higher level screensize layouts will be in the
+	media_queries.css file.
+*/
+
 html, body {
 	color: white;
 	background-color: black;
@@ -7,16 +14,101 @@ p, h2, h3, h4, h5, li, header {
 	font-family: 'Poiret One', cursive;
 }
 
+header {
+	height: 100px;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+header img {
+	width: 100px;
+	height: 100px;
+	padding-top: 5px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+.intro {
+	padding-bottom: 10%;
+}
+
+.description-specials {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
 
 
 
+.dish {
+	display: inline-flex;
+}
 
+.dish img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.menu-title {
+	display: inline-flex;
+}
+
+.menu-title h4 {
+	margin: 0;
+}
+
+.menu-title h5 {
+	margin: 0;
+	padding-left: 15%;
+}
+
+.menu-title p {
+	font-size: 14px;
+}
+
+ul {
+	list-style: none;
+	padding-right: 15%;
+	text-align: center;
+}
+
+a img {
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+.contact h4 {
+	text-decoration: underline;
+}
+
+.contact p {
+	padding-bottom: 10%;
+}
+
+.contact img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+/* How TO - Modal Images (w3schools.com): http://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+ 	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-top: 5px;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -99,26 +191,9 @@ p, h2, h3, h4, h5, li, header {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a {
+color: #fff;
+}
 
 .parallax {
     /* The image used */
@@ -143,13 +218,11 @@ footer{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 i {
 	padding-right: 25px;
 }
-
 
 /* external css: flickity.css */
 
