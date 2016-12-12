@@ -90,7 +90,7 @@
 		min-height: 350px;
 	}
 
-	.menu {
+	.dishes {
 		padding-left: 8%;
 	}
 
@@ -102,15 +102,15 @@
 
 @media only screen and (min-width: 600px) {
 
-	.menu {
+	.dishes {
 		padding-left: 15%;
 	}
 
-	.menu h2 {
+	.dishes h2 {
 		margin-right: 15%;
 	}
 
-	.menu h3 {
+	.dishes h3 {
 		margin-right: 15%;
 	}
 
@@ -121,7 +121,7 @@
 
 @media only screen and (min-width: 600px) {
 
-	.menu {
+	.dishes {
 		padding-left: 17%;
 	}
 }
@@ -132,15 +132,15 @@
         width: 100%;
     }
 
-	.menu {
+	.dishes {
 		padding-left: 20%;
 	}
 
-	.menu h2 {
+	.dishes h2 {
 		margin-right: 20%;
 	}
 
-	.menu h3 {
+	.dishes h3 {
 		margin-right: 20%;
 	}
 
@@ -184,7 +184,7 @@
     	height: 400px;
   	}
 
-	.menu {
+	.dishes {
 		padding-left: 3%;
 	}
 
@@ -218,16 +218,16 @@
 		margin-top: 10%;
 	}
 
-	.menu {
+	.dishes {
 		margin: 0;
 		padding-right: 10%;
 	}
 
-	.menu h2 {
+	.dishes h2 {
 		margin-left: 30%;
 	}
 
-	.menu h3 {
+	.dishes h3 {
 		margin-left: 30%;
 	}
 
