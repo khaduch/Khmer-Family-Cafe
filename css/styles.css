@@ -153,9 +153,9 @@ nav li:last-child {
 
 
 
-
-
-
+.carousel-cell {
+  display: flex;
+}
 
 
 
