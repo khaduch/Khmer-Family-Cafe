@@ -18,7 +18,8 @@ header {
 	height: 100px;
 	display: flex;
   margin-top: 20px;
-	margin-bottom: 30px;
+	padding-bottom: 20px;
+  background-color: black;
 }
 
 header img {
@@ -67,7 +68,6 @@ h3 {
 
 ul {
 	list-style: none;
-	padding-right: 15%;
 	text-align: center;
 }
 
@@ -95,7 +95,15 @@ a img {
 
 
 
-
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
 
 
 
@@ -123,7 +131,6 @@ a img {
 
 ul {
   list-style: none;
-
   margin: auto;
 }
 
@@ -131,7 +138,7 @@ ul {
 
 ul a {
   display: block;
-  padding: 20px;
+  padding: 15px;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
@@ -274,18 +281,14 @@ nav li:last-child {
 
 
 
-
-
 a {
 color: #fff;
 }
 
 .parallax {
+    padding-bottom: 5%;
     /* The image used */
     background-image: url("pho.jpg");
-
-    /* Set a specific height */
-    min-height: 300px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
