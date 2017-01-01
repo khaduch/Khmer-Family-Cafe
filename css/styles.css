@@ -333,6 +333,7 @@ body { font-family: sans-serif; }
           align-items: center;
 
   -webkit-flex-direction: column;
+      padding-bottom: 5%;
 }
 
 .carousel-cell img {
