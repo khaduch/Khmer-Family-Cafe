@@ -249,8 +249,8 @@ nav li:last-child {
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    bottom: 5px;
+    left: 45px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
@@ -444,3 +444,22 @@ body { font-family: sans-serif; }
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 65%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
