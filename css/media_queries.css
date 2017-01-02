@@ -1,5 +1,9 @@
 @media only screen and (min-width: 200px) {
 
+	.carousel-cell {
+		  -webkit-flex-direction: column;
+	}
+
 	.parallax {
 		min-height: 500px;
 	}
@@ -108,6 +112,11 @@
   .open {
     height: 295px;
   }
+
+  .carousel-cell img {
+  	  max-width: 80%;
+  	max-height: 80%;
+  }
 }
 
 
@@ -125,6 +134,11 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+
+	  .carousel-cell img {
+  	  max-width: 70%;
+  	max-height: 70%;
+  }
 
 }
 
@@ -151,6 +165,13 @@
 		padding-left: 8%;
 	}
 
+
+	  .carousel-cell img {
+  	  max-width: 60%;
+  	max-height: 60%;
+  }
+
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -173,14 +194,21 @@
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
+	  .carousel-cell img {
+  	  max-width: 50%;
+  	max-height: 50%;
+  }
 
-	.dishes {
-		padding-left: 17%;
-	}
+
 }
 
+
 @media only screen and (min-width: 700px) {
+
+
+
+
 
 	.modal-content {
         width: 100%;
@@ -233,6 +261,10 @@
 
 /*		Tablet 768px 		*/
 @media only screen and (min-width: 768px) {
+
+	  	.carousel-cell {
+		  -webkit-flex-direction: row;
+	}
 
 	.carousel-cell {
     	height: 400px;
@@ -323,6 +355,11 @@
         height: 80%;
 	}
 
+
+	  .carousel-cell img {
+  	  max-width: 100%;
+  	max-height: 100%;
+  }
 
 
 }
