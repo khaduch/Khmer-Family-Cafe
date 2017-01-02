@@ -110,6 +110,10 @@
 		min-height: 600px;
 	}
 
+	.menu {
+		display: flex;
+	}
+
 }
 
 
