@@ -40,6 +40,16 @@
 	.contact h4 {
 		margin-top: 10%;
 	}
+
+	.google-maps iframe {
+		position: absolute;
+	    top: 30%;
+        left: 5%;
+        width: 100%;
+        height: 100%;
+	}
+
+
 }
 
 /*		Mobile-M 375px 		*/
@@ -303,6 +313,18 @@
 		padding-bottom: 10%;
 		padding-left: 10%;
 	}
+
+
+	.google-maps iframe {
+		position: absolute;
+	    top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+	}
+
+
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -420,6 +442,13 @@
 	.about p {
 		padding-left: 22%;
 		padding-right: 22%;
+	}
+
+	.google-maps iframe {
+	    top: 15%;
+        left: 20%;
+        width: 60%;
+        height: 60%;
 	}
 }
 
