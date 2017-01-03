@@ -53,6 +53,11 @@
         height: 100%;
 	}
 
+	.social img {
+		width: 60px;
+		height: 60px;
+	}
+
 
 }
 
