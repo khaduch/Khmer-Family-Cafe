@@ -36,7 +36,7 @@ h3 {
 	text-decoration: underline;
 }
 
-.intro {
+.intro p {
 	padding-bottom: 10%;
 }
 
@@ -434,3 +434,20 @@ body { font-family: sans-serif; }
         height: 0;
         overflow: hidden;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dish-img {
+  width: 60px; height: 60px; margin-right: 10px;
+}
