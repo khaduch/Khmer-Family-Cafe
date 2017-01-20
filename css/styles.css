@@ -273,14 +273,6 @@ nav li:last-child {
 
 
 
-
-
-
-
-
-
-
-
 a {
 color: #fff;
 }
@@ -449,5 +441,10 @@ body { font-family: sans-serif; }
 
 
 .dish-img {
-  width: 60px; height: 60px; margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-style: outset;
+  border-color: #aaa;
+  border-width: 2px;
 }
