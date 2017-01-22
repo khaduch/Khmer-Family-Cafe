@@ -1,25 +1,135 @@
+/* 	Built from a mobile-first perspective, the CSS below
+	pertains to the styles of smaller mobile phone screensizes
+	in Chrome Developer tools (Mobile-S 320px). The CSS code
+	for styling higher level screensize layouts will be in the
+	media_queries.css file.
+*/
+
 html, body {
 	color: white;
 	background-color: black;
+  font-family: sans-serif;
 }
 
 p, h2, h3, h4, h5, li, header {
 	font-family: 'Poiret One', cursive;
 }
 
+/* ======================================               HAMBURGER DROPDOWN NAV                ======================================  */
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu {
+  background-color: black;
+}
+
+ul a {
+  display: block;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  float: left;
+  width: 20%;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+/* ======================================               HOME                ======================================  */
+
+header {
+	height: 100px;
+	display: flex;
+  margin-top: 20px;
+	padding-bottom: 20px;
+  background-color: black;
+}
+
+header img {
+	width: 100px;
+	height: 100px;
+	padding-top: 5px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+.intro p {
+	padding-bottom: 10%;
+}
+
+.parallax {
+    padding-bottom: 5%;
+    /* The image used */
+    background-image: url("pho.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+/* ======================================         DAILY SPECIALS            ======================================  */
 
+.description-specials {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
 
+.carousel-cell {
+  display: flex;
+}
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
+/* How TO - Modal Images (w3schools.com): http://www.w3schools.com/howto/howto_css_modal_images.asp */
+
+#myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover,
+#myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
@@ -36,7 +146,7 @@ p, h2, h3, h4, h5, li, header {
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
+/* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -44,8 +154,9 @@ p, h2, h3, h4, h5, li, header {
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+/* Caption of Modal Image */
+#caption1, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10,
+#caption11, #caption12, #caption13, #caption14, #caption15, #caption16, #caption17 {
     margin: auto;
     display: block;
     width: 80%;
@@ -56,8 +167,9 @@ p, h2, h3, h4, h5, li, header {
     height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+/* Add Animation */
+.modal-content, #caption1, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10,
+#caption11, #caption12, #caption13, #caption14, #caption15, #caption16, #caption17 {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -77,9 +189,9 @@ p, h2, h3, h4, h5, li, header {
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
+    bottom: 5px;
+    left: 45px;
+    color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -92,70 +204,11 @@ p, h2, h3, h4, h5, li, header {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.parallax {
-    /* The image used */
-    background-image: url("pho.jpg");
-
-    /* Set a specific height */
-    min-height: 300px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-li {
-	padding-bottom: 5%;
-}
-
-footer{
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-i {
-	padding-right: 25px;
-}
-
-
 /* external css: flickity.css */
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+
 
 .carousel {
   background: black;
@@ -163,7 +216,6 @@ body { font-family: sans-serif; }
 
 .carousel-cell {
   width: 100%;
-  height: 300px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
@@ -173,9 +225,24 @@ body { font-family: sans-serif; }
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
+      padding-bottom: 5%;
 }
 
 .carousel-cell img {
+  display: block;
+
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+
+.carousel-cell p {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -198,16 +265,12 @@ body { font-family: sans-serif; }
           filter: none;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel-cell {
-    height: 400px;
-  }
-}
-
-@media screen and ( min-width: 960px ) {
-  .carousel-cell {
-    width: 60%;
-  }
+.carousel-cell.is-selected p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
 }
 
 /* buttons, no circle */
@@ -234,4 +297,76 @@ body { font-family: sans-serif; }
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
+}
+
+/* ======================================        MENU           ======================================  */
+
+
+.dish {
+	display: inline-flex;
+}
+
+.menu-title {
+	display: inline-flex;
+}
+
+.menu-title h4 {
+	margin: 0;
+}
+
+.menu-title h5 {
+	margin: 0;
+	padding-left: 15%;
+}
+
+.menu-title p {
+	font-size: 14px;
+}
+
+.dish-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-style: outset;
+  border-color: #aaa;
+  border-width: 2px;
+}
+
+/* ======================================        CONTACT US         ======================================  */
+
+ul {
+	list-style: none;
+	text-align: center;
+  margin: auto;
+}
+
+.contact h4 {
+	text-decoration: underline;
+}
+
+.contact li {
+	padding-bottom: 5%;
+}
+
+/* ======================================        GOOGLE MAPS         ======================================  */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 65%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+/* ======================================        SOCIAL MEDIA         ======================================  */
+
+.social {
+  right: 5%;
+}
+
+.social-links {
+  display: inline-flex;
+}
+
+.social-links img {
+  margin-right: 10%;
 }
