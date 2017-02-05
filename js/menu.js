@@ -1,5 +1,5 @@
 var menu = {
-	"dishes" : [
+	"column1dishes" : [
 		{
 			"name": "Beef Sticks",
 			"price": "$5",
@@ -41,7 +41,10 @@ var menu = {
 			"description": "Description of what's in the dish and how it's cooked.",
 			"image": "images/dishes/papaya-salad.jpg",
 			"altText": "papaya-salad"
-		},
+		}
+	],
+
+	"column2dishes" : [
 		{
 			"name": "Chow Mein",
 			"price": "$5",
@@ -90,7 +93,10 @@ var menu = {
 			"description": "Description of what's in the dish and how it's cooked.",
 			"image": "images/dishes/chicken-beef-larb.jpg",
 			"altText": "chicken-beef-larb"
-		},
+		}
+	],
+
+	"desserts" : [
 		{
 			"name": "khmer shaved ice",
 			"price": "$5",
@@ -104,7 +110,10 @@ var menu = {
 			"description": "Description of what's in the dish and how it's cooked.",
 			"image": "images/dishes/shaved-ice.jpg",
 			"altText": "shaved-ice"
-		},
+		}
+	],
+
+	"drinks" : [
 		{
 			"name": "Boba",
 			"price": "$5",
@@ -122,46 +131,54 @@ var menu = {
 	]
 }
 
-
-
-
-
 menu.display = function(){
+	for (var column1dish in menu.column1dishes) {
+		var formattedPic = HTMLdishPic.replace("%data%", menu.column1dishes[column1dish].image);
+		var formattedName = HTMLdishName.replace("%data%", menu.column1dishes[column1dish].name);
+		var formattedPrice = HTMLdishPrice.replace("%data%", menu.column1dishes[column1dish].price);
+		var formattedDescription = HTMLdishDescription.replace("%data%", menu.column1dishes[column1dish].description);
 
-
-
-for (var dish in menu.dishes) {
-
-
-	var formattedPic = HTMLdishPic.replace("%data%", menu.dishes[dish].image);
-
-
-	var formattedName = HTMLdishName.replace("%data%", menu.dishes[dish].name);
-	var formattedPrice = HTMLdishPrice.replace("%data%", menu.dishes[dish].price);
-	var formattedDescription = HTMLdishDescription.replace("%data%", menu.dishes[dish].description);
-
-
-	var HTMLdishInfoContainer = '<div class="menu-info">'+ formattedName + formattedPrice + formattedDescription + '</div>';
-
-	var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
-
-
+		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
 
 		$("#main-column-1").append(HTMLdishContainer);	
-}
+	}
 
+		for (var column2dish in menu.column2dishes) {
+		var formattedPic = HTMLdishPic.replace("%data%", menu.column2dishes[column2dish].image);
+		var formattedName = HTMLdishName.replace("%data%", menu.column2dishes[column2dish].name);
+		var formattedPrice = HTMLdishPrice.replace("%data%", menu.column2dishes[column2dish].price);
+		var formattedDescription = HTMLdishDescription.replace("%data%", menu.column2dishes[column2dish].description);
 
+		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
 
+		$("#main-column-2").append(HTMLdishContainer);	
+	}
 
+		for (var dessert in menu.desserts) {
+		var formattedPic = HTMLdishPic.replace("%data%", menu.desserts[dessert].image);
+		var formattedName = HTMLdishName.replace("%data%", menu.desserts[dessert].name);
+		var formattedPrice = HTMLdishPrice.replace("%data%", menu.desserts[dessert].price);
+		var formattedDescription = HTMLdishDescription.replace("%data%", menu.desserts[dessert].description);
+
+		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
+
+		$("#dessert-column").append(HTMLdishContainer);	
+	}
+
+		for (var drink in menu.drinks) {
+		var formattedPic = HTMLdishPic.replace("%data%", menu.drinks[drink].image);
+		var formattedName = HTMLdishName.replace("%data%", menu.drinks[drink].name);
+		var formattedPrice = HTMLdishPrice.replace("%data%", menu.drinks[drink].price);
+		var formattedDescription = HTMLdishDescription.replace("%data%", menu.drinks[drink].description);
+
+		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
+
+		$("#drinks-column").append(HTMLdishContainer);	
+	}
 };
 
-
-
 menu.display();
-
-
-
-
-
-
-
