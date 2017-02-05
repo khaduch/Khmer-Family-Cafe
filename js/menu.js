@@ -131,54 +131,21 @@ var menu = {
 	]
 }
 
-menu.display = function(){
-	for (var column1dish in menu.column1dishes) {
-		var formattedPic = HTMLdishPic.replace("%data%", menu.column1dishes[column1dish].image);
-		var formattedName = HTMLdishName.replace("%data%", menu.column1dishes[column1dish].name);
-		var formattedPrice = HTMLdishPrice.replace("%data%", menu.column1dishes[column1dish].price);
-		var formattedDescription = HTMLdishDescription.replace("%data%", menu.column1dishes[column1dish].description);
+menu.display = function(foodArray, pageLocation){
+  foodArray.forEach(function(dish){
+    var formattedPic = HTMLdishPic.replace("%data%", dish.image);
+    var formattedName = HTMLdishName.replace("%data%", dish.name);
+    var formattedPrice = HTMLdishPrice.replace("%data%", dish.price);
+    var formattedDescription = HTMLdishDescription.replace("%data%", dish.description);
 
-		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
-		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
+    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+    var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
 
-		$("#main-column-1").append(HTMLdishContainer);	
-	}
+    $(pageLocation).append(HTMLdishContainer);
+  });
+};  
 
-		for (var column2dish in menu.column2dishes) {
-		var formattedPic = HTMLdishPic.replace("%data%", menu.column2dishes[column2dish].image);
-		var formattedName = HTMLdishName.replace("%data%", menu.column2dishes[column2dish].name);
-		var formattedPrice = HTMLdishPrice.replace("%data%", menu.column2dishes[column2dish].price);
-		var formattedDescription = HTMLdishDescription.replace("%data%", menu.column2dishes[column2dish].description);
-
-		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
-		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
-
-		$("#main-column-2").append(HTMLdishContainer);	
-	}
-
-		for (var dessert in menu.desserts) {
-		var formattedPic = HTMLdishPic.replace("%data%", menu.desserts[dessert].image);
-		var formattedName = HTMLdishName.replace("%data%", menu.desserts[dessert].name);
-		var formattedPrice = HTMLdishPrice.replace("%data%", menu.desserts[dessert].price);
-		var formattedDescription = HTMLdishDescription.replace("%data%", menu.desserts[dessert].description);
-
-		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
-		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
-
-		$("#dessert-column").append(HTMLdishContainer);	
-	}
-
-		for (var drink in menu.drinks) {
-		var formattedPic = HTMLdishPic.replace("%data%", menu.drinks[drink].image);
-		var formattedName = HTMLdishName.replace("%data%", menu.drinks[drink].name);
-		var formattedPrice = HTMLdishPrice.replace("%data%", menu.drinks[drink].price);
-		var formattedDescription = HTMLdishDescription.replace("%data%", menu.drinks[drink].description);
-
-		var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
-		var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
-
-		$("#drinks-column").append(HTMLdishContainer);	
-	}
-};
-
-menu.display();
+menu.display(menu.column1dishes, "#main-column-1");
+menu.display(menu.column2dishes, "#main-column-2");
+menu.display(menu.desserts, "#dessert-column");
+menu.display(menu.drinks, "#drinks-column");
