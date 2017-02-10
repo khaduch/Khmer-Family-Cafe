@@ -1,6 +1,7 @@
 var menu = {
 	"column1dishes" : [
 		{
+			"id": "beef-sticks",
 			"name": "Beef Sticks",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -8,6 +9,7 @@ var menu = {
 			"altText": "beef-sticks"
 		},
 		{
+			"id": "stuffed-chicken",
 			"name": "Stuffed Chicken",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -15,6 +17,7 @@ var menu = {
 			"altText": "stuffed-chicken"
 		},
 		{
+			"id": "lot-cha",
 			"name": "Lot Cha",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -22,6 +25,7 @@ var menu = {
 			"altText": "lot-cha"
 		},
 		{
+			"id": "fried-chicken",
 			"name": "Fried Chicken",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -29,6 +33,7 @@ var menu = {
 			"altText": "fried-chicken"
 		},
 		{
+			"id": "chicken-patty",
 			"name": "Chicken Patty",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -36,6 +41,7 @@ var menu = {
 			"altText": "chicken-patty"
 		},
 		{
+			"id": "papaya-salad",
 			"name": "Papaya Salad",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -46,6 +52,7 @@ var menu = {
 
 	"column2dishes" : [
 		{
+			"id": "chow-mein",
 			"name": "Chow Mein",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -53,6 +60,7 @@ var menu = {
 			"altText": "chow-mein"
 		},
 		{
+			"id": "eggrolls",
 			"name": "Eggrolls",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -60,6 +68,7 @@ var menu = {
 			"altText": "eggrolls"
 		},
 		{
+			"id": "Beef-Pahlok",
 			"name": "Beef Pahlok",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -67,6 +76,7 @@ var menu = {
 			"altText": "Beef-Pahlok"
 		},
 		{
+			"id": "fried-rice",
 			"name": "Fried Rice",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -74,6 +84,7 @@ var menu = {
 			"altText": "Fried-Rice"
 		},
 		{
+			"id": "pho",
 			"name": "Pho",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -81,6 +92,7 @@ var menu = {
 			"altText": "pho"
 		},
 		{
+			"id": "spring-rolls",
 			"name": "Spring Rolls",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -88,6 +100,7 @@ var menu = {
 			"altText": "spring-rolls"
 		},
 		{
+			"id": "chicken-beef-larb",
 			"name": "Chicken/Beef Larb",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -98,6 +111,7 @@ var menu = {
 
 	"desserts" : [
 		{
+			"id": "khmer-shaved-ice",
 			"name": "khmer shaved ice",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -105,6 +119,7 @@ var menu = {
 			"altText": "khmer-shaved-ice"
 		},
 		{
+			"id": "shaved-ice",
 			"name": "Shaved Ice Sundae",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -115,6 +130,7 @@ var menu = {
 
 	"drinks" : [
 		{
+			"id": "boba",
 			"name": "Boba",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
@@ -122,14 +138,17 @@ var menu = {
 			"altText": "boba"
 		},
 		{
+			"id": "thai-tea",
 			"name": "Thai Tea",
 			"price": "$5",
 			"description": "Description of what's in the dish and how it's cooked.",
 			"image": "images/dishes/drinks.jpg",
-			"altText": "drinks"
+			"altText": "thai-tea"
 		}
 	]
 }
+
+
 
 menu.display = function(foodArray, pageLocation){
   foodArray.forEach(function(dish){
@@ -138,12 +157,24 @@ menu.display = function(foodArray, pageLocation){
     var formattedPrice = HTMLdishPrice.replace("%data%", dish.price);
     var formattedDescription = HTMLdishDescription.replace("%data%", dish.description);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
-    var HTMLdishContainer = '<div class="row dish">' + formattedPic + HTMLdishInfoContainer + '</div>';
 
-    $(pageLocation).append(HTMLdishContainer);
+    var formattedModal = Modal.replace("%data%", dish.id);
+    var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
+	var formattedModalBody = '<div class="modal-body">' + formattedPic + formattedDescription + formattedPrice + '</div>';    
+
+    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+	var formattedModalTrigger = ModalTrigger.replace(HTMLdishPic, formattedPic);
+    var HTMLdishContainer = '<div class="row dish">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
+
+
+     $(pageLocation).append(HTMLdishContainer);
+
+
   });
+
 };  
+
+
 
 menu.display(menu.column1dishes, "#main-column-1");
 menu.display(menu.column2dishes, "#main-column-2");
