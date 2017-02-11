@@ -6,8 +6,6 @@ var HTMLdishDescription = '<p>%data%</p>';
 
 
 /*		Modal strings	*/
-var ModalTrigger = '<a data-toggle="modal" data-target="#myModal">' + HTMLdishPic + '</a>';
-
 
 var ModalBody = '<div class="modal-body">' + HTMLdishPic + HTMLdishDescription + HTMLdishPrice + '</div>';
 
