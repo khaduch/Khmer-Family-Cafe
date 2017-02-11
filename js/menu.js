@@ -174,8 +174,6 @@ menu.display = function(foodArray, pageLocation){
 
 };  
 
-
-
 menu.display(menu.column1dishes, "#main-column-1");
 menu.display(menu.column2dishes, "#main-column-2");
 menu.display(menu.desserts, "#dessert-column");
