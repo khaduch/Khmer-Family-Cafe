@@ -158,17 +158,29 @@ menu.display = function(foodArray, pageLocation){
     var formattedDescription = HTMLdishDescription.replace("%data%", dish.description);
 
 
-    var formattedModal = Modal.replace("%data%", dish.id);
+
+	var formattedModalBody = '<div class="modal-body">' + formattedPic + formattedDescription + formattedPrice + '</div>'; 
     var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
-	var formattedModalBody = '<div class="modal-body">' + formattedPic + formattedDescription + formattedPrice + '</div>';    
+
+    var formattedModalHeader = ModalHeader.replace(ModalTitle, formattedModalTitle);
+	var formattedModalContent = '<div class="modal-content">' + formattedModalHeader + formattedModalBody + ModalFooter + '</div>';
+	var formattedModalDialog = ModalDialog.replace(ModalContent, formattedModalContent);
+
+	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
+    var formattedModal = Modal.replace("%data%", dish.id);
 
     var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
+
+
+
     var HTMLdishContainer = '<div class="row dish">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
 
 
-     $(pageLocation).append(HTMLdishContainer);
+    console.log(HTMLdishContainer);
+
+    $(pageLocation).append(HTMLdishContainer);
 
 
   });
