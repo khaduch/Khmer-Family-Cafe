@@ -332,6 +332,14 @@ a .dish-img {
   border-width: 2px;
 }
 
+.modal h5 {
+  color: black;
+}
+
+.modal p {
+  color: black;
+}
+
 .modal {
   z-index: 10000;
 }
