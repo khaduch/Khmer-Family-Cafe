@@ -4,10 +4,12 @@ var HTMLdishName = '<h4>%data%</h4>';
 var HTMLdishPrice = '<h5>%data%</h5>';
 var HTMLdishDescription = '<p>%data%</p>';
 
+var HTMLfulldishPic = '<img src=%data% class="img-responsive">';
+
 
 /*		Modal strings	*/
 
-var ModalBody = '<div class="modal-body">' + HTMLdishPic + HTMLdishDescription + HTMLdishPrice + '</div>';
+var ModalBody = '<div class="modal-body">' + HTMLfulldishPic + HTMLdishDescription + HTMLdishPrice + '</div>';
 
 var ModalOrderButton = '<button type="button" class="btn btn-primary">Order</button>';
 var ModalCloseButton = '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>';

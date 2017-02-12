@@ -157,9 +157,11 @@ menu.display = function(foodArray, pageLocation){
     var formattedPrice = HTMLdishPrice.replace("%data%", dish.price);
     var formattedDescription = HTMLdishDescription.replace("%data%", dish.description);
 
+    var formattedFullDishPic = HTMLfulldishPic.replace("%data%", dish.image);
 
 
-	var formattedModalBody = '<div class="modal-body">' + formattedPic + formattedDescription + formattedPrice + '</div>'; 
+
+	var formattedModalBody = '<div class="modal-body">' + formattedFullDishPic + formattedDescription + formattedPrice + '</div>'; 
     var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
 
     var formattedModalHeader = ModalHeader.replace(ModalTitle, formattedModalTitle);
