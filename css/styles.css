@@ -118,6 +118,10 @@ h3 {
   display: flex;
 }
 
+.carousel-text {
+  display: block;
+}
+
 /* How TO - Modal Images (w3schools.com): http://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17 {
