@@ -7,7 +7,7 @@ var HTMLdishDescription = '<p>%data%</p>';
 var HTMLfulldishPic = '<img src=%data% class="img-responsive">';
 
 
-/*		Modal strings	*/
+/*	Modal strings	*/
 
 var ModalBody = '<div class="modal-body">' + HTMLfulldishPic + HTMLdishDescription + HTMLdishPrice + '</div>';
 
@@ -24,3 +24,8 @@ var ModalHeader = '<div class="modal-header">' + ModalXButton  + ModalTitle + '<
 var ModalContent = '<div class="modal-content">' + ModalHeader + ModalBody + ModalFooter + '</div>';
 
 var ModalDialog = '<div class="modal-dialog">' + ModalContent + '</div>';
+
+
+/*	Carousel strings	*/
+
+var SpecialDescription = '<p class="description-specials">%data%</p>'
