@@ -73,13 +73,18 @@
 
 	.dishes h2 {
 		font-size: 25px;
-		padding-top: 20%;
-		padding-bottom: 5%;
+		padding-top: 30%;
+		padding-bottom: 1%;
 	}
 
 	.dishes h3 {
 		font-size: 20px;
 		padding-bottom: 5%;
+	}
+
+	.dishes h5 {
+		padding-top: 5%;
+		padding-bottom: 10%;
 	}
 
 	.menu-info h4 {
