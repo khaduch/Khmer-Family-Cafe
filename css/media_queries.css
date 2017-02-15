@@ -37,7 +37,7 @@
 	}
 
 	.carousel-text h4 {
-		font-size: 20px;
+		font-size: 23px;
 	}
 
 	.carousel-text h5 {
@@ -60,7 +60,7 @@
 	}
 
 	p {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	ul a {
@@ -157,7 +157,7 @@
 	.social h3 {
 		font-size: 20px;
 		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 		padding-left: 10%;
 	}
 
@@ -165,7 +165,7 @@
 		width: 60px;
 		height: 60px;
 		margin-bottom: 5%;
-		margin-left: 20%;
+		margin-left: 50%;
 	}
 
 	.copyright {
@@ -400,16 +400,80 @@
 /*		Tablet 768px 		*/
 @media only screen and (min-width: 768px) {
 
-	  	.carousel-cell {
-		  -webkit-flex-direction: row;
+	ul li {
+		font-size: 20px;
+	}
+
+	a .dish-img {
+		margin-right: 60px;
+	}
+
+	.contact h2 {
+		font-size: 35px;
+		padding-top: 0;
+	}
+
+	.contact h4 {
+		font-size: 25px;
+		padding-bottom: 2%;
+	}
+
+	.menu-info h4 {
+		font-size: 21px;
+		padding-left: 5%;
+		display: inline-flex;
+	}
+
+	.dish img {
+		margin-top: 10%;
+	}
+
+	ul a {
+    	font-size: 22px;
+	}
+
+	.intro h4 {
+		font-size: 25px;
+    	padding-bottom: 1%;
+	}
+
+	.intro p {
+		font-size: 20px;
+	}
+
+	.specials h2 {
+		font-size: 35px;
+		padding-bottom: 1%;
+	}
+
+	.carousel-text h5 {
+		font-size: 20px;
+	    padding-right: 20%;
+	}
+
+	.carousel-text p {
+		font-size: 20px;
+		padding-top: 2%;
+	}
+
+	.carousel-cell {
+		-webkit-flex-direction: row;
 	}
 
 	.carousel-cell {
     	height: 400px;
+    	padding: 5%;
   	}
 
 	.dishes {
 		padding-left: 3%;
+	}
+
+	.dishes h5 {
+		font-size: 20px;
+		padding-top: 0;
+		padding-left: 10%;
+		padding-bottom: 5%;
 	}
 
 	header img {
@@ -418,7 +482,7 @@
 
 	header h1 {
     	font-size: 50px;
-
+    	margin-left: 10%;
 	}
 
 	h4 {
@@ -441,11 +505,14 @@
 	}
 
 	.dishes h2 {
+		font-size: 35px;
 		margin-left: 30%;
 	}
 
 	.dishes h3 {
+		font-size: 25px;
 		margin-left: 30%;
+		padding-bottom: 3%;
 	}
 
 	.dish {
@@ -453,16 +520,23 @@
 	    margin-bottom: 5%;
 	}
 
-	.menu-info {
-		padding-top: 2.5%;
-	}
-
 	.menu-info p {
-		padding-left: 0;
+		padding-right: 0px;
+    	padding-left: 5%;
 	}
 
 	.catering {
 		padding-top: 10%;
+	}
+
+	.catering h2 {
+		font-size: 35px;
+		padding-bottom: 2%;
+	}
+
+	.catering h4 {
+		font-size: 25px;
+		padding-bottom: 1%;
 	}
 
 	.catering img {
@@ -470,8 +544,14 @@
 	}
 
 	.catering p {
+		font-size: 20px;
 		padding-bottom: 10%;
 		padding-left: 10%;
+	}
+
+	.about h2 {
+		font-size: 35px;
+		padding-bottom: 2%;
 	}
 
 	.about img {
@@ -479,9 +559,14 @@
 	}
 
 	.about p {
+		font-size: 20px;
 		padding-top: 2%;
 		padding-bottom: 10%;
 		padding-left: 10%;
+	}
+
+	.google-maps p {
+		font-size: 20px;
 	}
 
 
@@ -494,11 +579,15 @@
 	}
 
 
-	  .carousel-cell img {
-  	  max-width: 100%;
-  	max-height: 100%;
-  }
+	.carousel-cell img {
+  		max-width: 100%;
+  		max-height: 100%;
+  	}
 
+  	.social h3 {
+  		font-size: 25px;
+  		text-decoration: underline;
+  	}
 
 }
 
