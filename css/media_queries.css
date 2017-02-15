@@ -1,7 +1,57 @@
 @media only screen and (min-width: 200px) {
 
+	header h1 {
+		font-size: 35px;
+		margin-left: 1%;
+		margin-top: 10%;
+	}
+
+	header img {
+		padding-top: 0;
+	}
+
+	.intro {
+		padding-top: 5%;
+	}
+
+	.intro h4 {
+		padding-bottom: 5%;
+	}
+
+	.specials {
+		padding-bottom: 10%;
+	}
+
+	.specials h2 {
+		font-size: 25px;
+		padding-bottom: 5%;
+	}
+
+	.description-specials {
+		padding-left: 10%;
+	}
+
+	.carousel-text {
+		padding-top: 5%;
+	}
+
+	.carousel-text h4 {
+		font-size: 20px;
+	}
+
+	.carousel-text h5 {
+		padding-top: 1%;
+		padding-bottom: 1%;
+		padding-right: 10%;
+	}
+
+	.carousel-text p {
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+
 	.carousel-cell {
-		  -webkit-flex-direction: column;
+		-webkit-flex-direction: column;
 	}
 
 	.parallax {
@@ -16,33 +66,83 @@
 		font-size: 15px;
 	}
 
-	.contact li {
-		margin-left: 15%;
-	}
-
 	.daily-specials {
 		margin-top: 20%;
 	}
 
 	.dishes h2 {
-		margin-top: 20%;
+		font-size: 25px;
+		padding-top: 20%;
+		padding-bottom: 5%;
+	}
+
+	.dishes h3 {
+		font-size: 20px;
+		padding-bottom: 5%;
+	}
+
+	.menu-info {
+		padding-left: 2%;
+		padding-top: 1%;
+		padding-bottom: 5%;
+	}
+
+	.menu-info h4 {
+		padding-bottom: 2%;
+	}
+
+	.pricedescription {
+		display: inline-flex;
+		padding-bottom: 5%;
+	}
+
+	.modal p {
+		padding-top: 5%;
+	}
+
+	.catering {
+		padding-bottom: 15%;
 	}
 
 	.catering h2 {
-		margin-top: 20%;
+		font-size: 25px;
+		padding-top: 20%;
+		padding-bottom: 5%;
+	}
+
+	.catering h4 {
+		padding-top: 2%;
+		padding-bottom: 5%;
+	}
+
+	.about {
+		padding-bottom: 30%;
 	}
 
 	.about h2 {
-		margin-top: 20%;		
+		font-size: 25px;
+		padding-top: 20%;
+		padding-bottom: 5%;		
+	}
+
+	.about p {
+		padding-top: 5%;
 	}
 
 	.contact h2 {
-		margin-top: 20%;
-		margin-bottom: 10%;		
+		font-size: 25px;
+		padding-top: 20%;
+		padding-bottom: 5%;		
 	}
 
 	.contact h4 {
-		margin-top: 10%;
+		font-size: 20px;
+		padding-top: 1%;
+		padding-bottom: 5%;
+	}
+
+	.contact ul {
+		padding-bottom: 10%;
 	}
 
 	.google-maps iframe {
@@ -53,11 +153,24 @@
         height: 100%;
 	}
 
+	.social h3 {
+		font-size: 20px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 10%;
+	}
+
 	.social img {
 		width: 60px;
 		height: 60px;
+		margin-bottom: 5%;
+		margin-left: 20%;
 	}
 
+	.copyright {
+		margin-left: 10%;
+		margin-bottom: 5%;
+	}
 
 }
 
@@ -65,10 +178,6 @@
 @media only screen and (min-width: 375px) {
 
 	header img {
-		margin-left: 5%;
-	}
-
-	header h1 {
 		margin-left: 5%;
 	}
 }
