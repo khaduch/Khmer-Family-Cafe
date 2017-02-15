@@ -148,8 +148,6 @@ var menu = {
 	]
 }
 
-
-
 menu.display = function(foodArray, pageLocation){
   foodArray.forEach(function(dish){
     var formattedPic = HTMLdishPic.replace("%data%", dish.image);
@@ -159,7 +157,7 @@ menu.display = function(foodArray, pageLocation){
 
     var formattedFullDishPic = HTMLfulldishPic.replace("%data%", dish.image);
 
-
+	var HTMLPriceAndDescription = '<div class="pricedescription">' + formattedDescription + formattedPrice + '</div>';
 
 	var formattedModalBody = '<div class="modal-body">' + formattedFullDishPic + formattedDescription + formattedPrice + '</div>'; 
     var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
@@ -171,20 +169,13 @@ menu.display = function(foodArray, pageLocation){
 	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
     var formattedModal = Modal.replace("%data%", dish.id);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedDescription + formattedPrice + '</div>';
+    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + HTMLPriceAndDescription + '</div>';
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 
-
-
     var HTMLdishContainer = '<div class="row dish">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
 
-
-    console.log(HTMLdishContainer);
-
     $(pageLocation).append(HTMLdishContainer);
-
-
   });
 
 };  
