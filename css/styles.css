@@ -86,9 +86,6 @@ h1 {
 	text-align: center;
 }
 
-h3 {
-	text-decoration: underline;
-}
 
 .intro p {
 	padding-bottom: 10%;
@@ -278,7 +275,9 @@ h3 {
 }
 
 /* buttons, no circle */
+
 .flickity-prev-next-button {
+  top: 35%;
   width: 60px;
   height: 60px;
   background: transparent;
@@ -330,10 +329,11 @@ h3 {
 a .dish-img {
   width: 60px;
   height: 60px;
-  margin-right: 10px;
+  margin-right: 50px;
   border-style: outset;
   border-color: #aaa;
   border-width: 2px;
+  border-radius: 5px;
 }
 
 .modal h5 {

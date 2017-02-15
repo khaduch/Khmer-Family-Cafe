@@ -29,6 +29,7 @@
 
 	.description-specials {
 		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	.carousel-text {
@@ -59,7 +60,7 @@
 	}
 
 	p {
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	ul a {
@@ -81,19 +82,14 @@
 		padding-bottom: 5%;
 	}
 
-	.menu-info {
-		padding-left: 2%;
-		padding-top: 1%;
-		padding-bottom: 5%;
-	}
-
 	.menu-info h4 {
-		padding-bottom: 2%;
+		padding-bottom: 3%;
+		text-decoration: underline;
 	}
 
 	.pricedescription {
 		display: inline-flex;
-		padding-bottom: 5%;
+		padding-bottom: 15%;
 	}
 
 	.modal p {
@@ -174,6 +170,22 @@
 
 }
 
+@media only screen and (max-width: 320px) {
+	a .dish-img {
+		  margin-top: 10%;		
+	}
+
+	.pricedescription h5 {
+		padding-left: 5%;
+	}
+
+	.menu-info {
+		padding-left: 5%;
+	}
+
+}
+
+
 /*		Mobile-M 375px 		*/
 @media only screen and (min-width: 375px) {
 
@@ -182,7 +194,14 @@
 	}
 }
 
+@media only screen and (min-width: 480px) {
 
+	header h1 {
+		font-size: 35px;
+		margin-left: 1%;
+		margin-top: 5%;
+	}
+}
 
 
 
