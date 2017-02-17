@@ -15,6 +15,16 @@ p, h2, h3, h4, h5, li, header {
 	font-family: 'Poiret One', cursive;
 }
 
+.catering {
+      padding-left: 0px;
+    padding-right: 0px;
+}
+
+.about {
+      padding-left: 0px;
+    padding-right: 0px; 
+}
+
 /* ======================================               HAMBURGER DROPDOWN NAV                ======================================  */
 
 .fixed-nav-bar {
@@ -101,6 +111,30 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax2 {
+    padding-bottom: 5%;
+    /* The image used */
+    background-image: url("catering.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax3 {
+    padding-bottom: 5%;
+    /* The image used */
+    background-image: url("family-cheers.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
 
 
