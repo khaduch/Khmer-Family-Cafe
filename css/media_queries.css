@@ -59,6 +59,10 @@
 	.parallax {
 		min-height: 500px;
 	}
+	
+	.parallax2 {
+		min-height: 300px;
+	}
 
 	p {
 		font-size: 17px;
