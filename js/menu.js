@@ -34,7 +34,7 @@ var menu = {
 		},
 		{
 			"id": "chicken-patty",
-			"name": "Chicken Patty",
+			"name": "Chicken Patties (Quantity: 3 patties)",
 			"price": "$5",
 			"description": "Fried lemon grass seasoned chicken patty with side of pickled veggies.",
 			"image": "images/dishes/chicken-patty.jpg",
