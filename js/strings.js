@@ -17,7 +17,7 @@ var ModalCloseButton = '<button type="button" class="btn btn-secondary" data-dis
 var ModalXButton = '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';
 var ModalTitle = '<h5 class="modal-title" id="exampleModalLabel">%data%</h5>';
 var ModalHeader = '<div class="modal-header">' + ModalXButton  + ModalTitle + '</div>';
-var ModalFooter = '<div class="modal-footer">' + ModalCloseButton + ModalOrderButton + '</div>';
+var ModalFooter = '<div class="modal-footer">' + ModalCloseButton + /*ModalOrderButton +*/ '</div>';
 
 var ModalContent = '<div class="modal-content">' + ModalHeader + ModalBody + ModalFooter + '</div>';
 
