@@ -2,7 +2,7 @@ var menu = {
 	"column1dishes" : [
 		{
 			"id": "beef-sticks",
-			"name": "Beef Sticks (Quantity: 3)",
+			"name": "Beef Sticks (3 sticks)",
 			"price": "$7.50",
 			"description": "Traditional lemon grass seasoned beef kabobs with a side of pickled veggies.",
 			"image": "images/dishes/beef-sticks.jpg",
@@ -10,7 +10,7 @@ var menu = {
 		},
 		{
 			"id": "stuffed-chicken",
-			"name": "Stuffed Chicken Wings (Quantity: 2)",
+			"name": "Stuffed Chicken Wings (2pc)",
 			"price": "$8.50",
 			"description": "Cambodian style lemon grass seasoning and peanut stuffed chicken wing broiled to perfection.",
 			"image": "images/dishes/stuffed-chicken.jpg",
@@ -26,7 +26,7 @@ var menu = {
 		},
 		{
 			"id": "fried-chicken",
-			"name": "Fried Chicken (Quantity: 6pc)",
+			"name": "Fried Chicken (6pc)",
 			"price": "$6.00",
 			"description": "Traditional seasoned battered fried chicken. Served with Sweet Sauce.",
 			"image": "images/dishes/fried-chicken.jpg",
@@ -34,7 +34,7 @@ var menu = {
 		},
 		{
 			"id": "chicken-patty",
-			"name": "Chicken Patties (Quantity: 3 patties)",
+			"name": "Chicken Patties (3 patties)",
 			"price": "$5",
 			"description": "Fried lemon grass seasoned chicken patty with side of pickled veggies.",
 			"image": "images/dishes/chicken-patty.jpg",
@@ -61,7 +61,7 @@ var menu = {
 		},
 		{
 			"id": "eggrolls",
-			"name": "Eggrolls (Quantity: 6pc)",
+			"name": "Eggrolls (6pc)",
 			"price": "$3.00",
 			"description": "Cambodian style crispy eggroll with vermicelli noodles, veggies, pork, and house seasoning served with sweet and sour sauce.",
 			"image": "images/dishes/eggrolls.jpg",
@@ -93,7 +93,7 @@ var menu = {
 		},
 		{
 			"id": "spring-rolls",
-			"name": "Spring Rolls (Quantity: 3 large rolls)",
+			"name": "Spring Rolls (2 large rolls)",
 			"price": "$6.00",
 			"description": "Fresh veggies, shrimp, and pork wrapped in rice paper alongside with special house sweet fish sauce.",
 			"image": "images/dishes/spring-rolls.jpg",
@@ -157,7 +157,7 @@ menu.display = function(foodArray, pageLocation){
 
     var formattedFullDishPic = HTMLfulldishPic.replace("%data%", dish.image);
 
-	var HTMLPriceAndDescription = '<div class="pricedescription">' + formattedDescription + formattedPrice + '</div>';
+	var HTMLprice = '<div class="pricedescription">' + formattedPrice + '</div>';
 
 	var formattedModalBody = '<div class="modal-body">' + formattedFullDishPic + formattedDescription + formattedPrice + '</div>'; 
     var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
@@ -169,7 +169,7 @@ menu.display = function(foodArray, pageLocation){
 	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
     var formattedModal = Modal.replace("%data%", dish.id);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + HTMLPriceAndDescription + '</div>';
+    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + HTMLprice + '</div>';
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 

@@ -34,7 +34,7 @@ var specials = {
 		},
 		{
 			"id": "Ban-Xeo",
-			"name": "Friday: Ban Xeo (Quantity: 2 Crepes)",
+			"name": "Friday: Ban Xeo (2 Crepes)",
 			"price": "$8.00",
 			"description": "Cambodian style sizzling pancake with ground chicken with a side of fresh veggies and special sweet fish sauce.",
 			"image": "images/dishes/Ban-Xeo.jpg",
