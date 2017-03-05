@@ -35,7 +35,7 @@ var menu = {
 		{
 			"id": "chicken-patty",
 			"name": "Chicken Patties (3 patties)",
-			"price": "$5",
+			"price": "$5.00",
 			"description": "Fried lemon grass seasoned chicken patty with side of pickled veggies.",
 			"image": "images/dishes/chicken-patty.jpg",
 			"altText": "chicken-patty"
@@ -93,7 +93,7 @@ var menu = {
 		},
 		{
 			"id": "spring-rolls",
-			"name": "Spring Rolls (2 large rolls)",
+			"name": "Spring Rolls (4pc)",
 			"price": "$6.00",
 			"description": "Fresh veggies, shrimp, and pork wrapped in rice paper alongside with special house sweet fish sauce.",
 			"image": "images/dishes/spring-rolls.jpg",
@@ -112,36 +112,36 @@ var menu = {
 	"desserts" : [
 		{
 			"id": "khmer-shaved-ice",
-			"name": "khmer shaved ice",
-			"price": "$5",
-			"description": "Description of what's in the dish and how it's cooked.",
+			"name": "khmer Shaved Ice",
+			"price": "$1.50 (Kids size), $3.00 (Regular size)",
+			"description": "Flavored ice topped with condense milk. Choose your ice flavor from: Tigers Blood (combination of watermelon, strawberry, and a small hint of coconut), pineapple, blue berry, bubblegum, cherry, Red Asian, and Green Asian.",
 			"image": "images/dishes/khmer-shaved-ice.jpg",
 			"altText": "khmer-shaved-ice"
 		},
 		{
-			"id": "shaved-ice",
-			"name": "Shaved Ice Sundae",
+			"id": "Nam-Va",
+			"name": "Nam Va",
 			"price": "$5",
-			"description": "Description of what's in the dish and how it's cooked.",
-			"image": "images/dishes/shaved-ice.jpg",
-			"altText": "shaved-ice"
+			"description": "Traditional Cambodian dessert with shaved ice with toppings of: leechee jelly, grass jelly, red beans, green beans, basil seed, green tapioca, palm sugar, green and red Asian syrup, and condensed milk.",
+			"image": "images/dishes/Nam-Va.jpg",
+			"altText": "Nam-Va"
 		}
 	],
 
 	"drinks" : [
 		{
 			"id": "boba",
-			"name": "Boba",
+			"name": "Boba Smoothie",
 			"price": "$3.50",
-			"description": "Description of what's in the dish and how it's cooked.",
+			"description": "Cream smoothie over tapioca pearls with your choice flavor of: Thai Tea, Taro, Milk Tea, Coconut, Vanilla, Green Tea, Matcha Green Tea, Strawberry, Honey Dew. Can also be served over ice instead of Boba.",
 			"image": "images/dishes/boba.jpg",
 			"altText": "boba"
 		},
 		{
 			"id": "thai-tea",
-			"name": "Thai Tea",
+			"name": "Thai Tea or Ice Coffee",
 			"price": "$5",
-			"description": "Description of what's in the dish and how it's cooked.",
+			"description": "Your choice of either traditional Thai tea or ice coffee served over ice.",
 			"image": "images/dishes/drinks.jpg",
 			"altText": "thai-tea"
 		}
