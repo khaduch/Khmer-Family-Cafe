@@ -177,15 +177,14 @@
 		margin-bottom: 5%;
 	}
 
-}
 
-@media only screen and (max-width: 320px) {
 
 	.menu-info {
 		margin-right: 20%;
 		padding-top: 2%;
 		display: inline-flex;
 	}
+
 
 }
 
