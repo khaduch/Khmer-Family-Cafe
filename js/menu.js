@@ -157,8 +157,6 @@ menu.display = function(foodArray, pageLocation){
 
     var formattedFullDishPic = HTMLfulldishPic.replace("%data%", dish.image);
 
-	var HTMLprice = '<div class="pricedescription">' + formattedPrice + '</div>';
-
 	var formattedModalBody = '<div class="modal-body">' + formattedFullDishPic + formattedDescription + formattedPrice + '</div>'; 
     var formattedModalTitle = ModalTitle.replace("%data%", dish.name);
 
@@ -169,7 +167,7 @@ menu.display = function(foodArray, pageLocation){
 	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
     var formattedModal = Modal.replace("%data%", dish.id);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + HTMLprice + '</div>';
+    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedPrice + '</div>';
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 

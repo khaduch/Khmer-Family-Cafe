@@ -13,7 +13,9 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 
 	<link rel="stylesheet" type="text/css" href="css/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="scss/styles.scss">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="scss/media_queries.scss">
 	<link rel="stylesheet" type="text/css" href="css/media_queries.css">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
 
@@ -52,7 +54,7 @@
 
 	<!-- 		Introduction 			-->
 			<div class="col-xs-12 intro">
-				<h4>Homemade Traditional Cambodian Cuisine...</h4>
+				<h2>Homemade Traditional Cambodian Cuisine...</h2>
 				<p>We are a family owned restaurant bringing back home-style Cambodian cuisine to the Central Valley. Everything is made fresh to order, using fine ingredients, and traditional recipes from Cambodia.</p>
 			</div>
 		</div>
@@ -61,13 +63,13 @@
 		<div class="row specials" id="daily-specials">
 			<h2 class="text-center daily-specials">Daily Specials</h2>
 			<!-- Flickity HTML init -->
-			<div class="carousel js-flickity" id="carousel" data-flickity></div>
+			<div class="carousel js-flickity" id="carousel" data-flickity='{ "pageDots": false }'></div>
 		</div>
 
 	<!-- 		Menu 					-->
 		<div class="col-xs-12 dishes" id="menu">
 			<h2 class="text-center">Menu</h2>
-			<h5 class="text-center">(Click on the image of a dish for details.)</h5>	
+			<h5>(Click on the image of a dish for details.)</h5>	
 			<h2 class="text-center">Main Dishes</h2>
 
 			<div id="main-column-1" class="col-sm-6"></div>
@@ -84,7 +86,7 @@
 		<!-- 		Catering 		-->
 		<div class="col-xs-12 catering">
 			<h2 class="text-center">Catering</h2>
-			<div class="col-xs-12 parallax2" id="catering"></div>
+			<img src="images/catering.jpg" class="img-responsive">
 			<h4 class="text-center">Have A Large Party or a Special Event? We Cater to You!</h4>
 			<p>We also do catering for large groups (big or small) for special events and get togethers. Call us for information on
 			prices and details.</p>
@@ -114,7 +116,7 @@
 				<li>Sun 8:30am - 6:00pm</li>
 			</ul>
 
-			<!-- 		Catering 		-->
+			<!-- 		Location 		-->
 			<h4 class="text-center">Location</h4>
 
 			<div class="google-maps">
