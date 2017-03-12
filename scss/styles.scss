@@ -354,7 +354,6 @@ ul {
 .google-maps {
     position: relative;
     padding-bottom: 65%; // This is the aspect ratio
-    height: 0;
     overflow: hidden;
 }
 
@@ -362,4 +361,8 @@ ul {
 
 .social-links {
   display: inline-flex;
+}
+
+.copyright {
+  padding-bottom: 5%;
 }
