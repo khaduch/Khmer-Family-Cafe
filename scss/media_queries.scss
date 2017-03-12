@@ -27,6 +27,8 @@ $margin-left-tablet: 15%;
 
 $padding-top-tablet: 5%;
 
+$padding-bottom-tablet: 2%;
+
 $padding-right-tablet: 5%;
 
 
@@ -49,7 +51,6 @@ $padding-right-tablet: 5%;
 	h2 {
 		font-size: $font-size-H2-mobile;
 		padding-top: $padding-top-tablet;
-		padding-bottom: $padding-bottom-H2-mobile;
 	}
 
 	h3 {
@@ -99,10 +100,6 @@ $padding-right-tablet: 5%;
 		min-height: 500px;
 	}
 	
-	.parallax2 {
-		min-height: 300px;
-	}
-
 	.carousel-cell {
 		-webkit-flex-direction: column;
 
@@ -225,7 +222,7 @@ $padding-right-tablet: 5%;
 		img {
 			margin-left: $margin-left-tablet;
 		}
-	} 
+	}
 
 	.carousel-cell {
 		-webkit-flex-direction: row;
