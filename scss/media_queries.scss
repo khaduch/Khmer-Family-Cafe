@@ -22,6 +22,8 @@ $padding-left-mobile: 5%;
 
 $padding-right-mobile: 5%;
 
+$margin-section-bottom: 20%;
+
 
 /*Tablet Variables*/
 
@@ -42,6 +44,11 @@ $padding-right-tablet: 5%;
 /*Mobile View*/
 
 @media only screen and (min-width: 200px) {
+
+	.intro, .specials, .dishes, .catering, .about, .contact {
+		margin-bottom: $margin-section-bottom;
+	}
+
 
 	header {
 		h1 {
@@ -70,8 +77,6 @@ $padding-right-tablet: 5%;
 
 	p {
 		font-size: $font-size-P-mobile;
-		padding-bottom: $padding-bottom-P-mobile;
-
 	}
 
 
