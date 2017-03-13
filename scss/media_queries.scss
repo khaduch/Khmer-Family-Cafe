@@ -226,6 +226,9 @@ $padding-right-tablet: 5%;
 
 	.carousel-cell {
 		-webkit-flex-direction: row;
+		img {
+			max-width: 50%;
+		}
 	}
 }
 
