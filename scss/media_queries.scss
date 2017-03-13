@@ -152,6 +152,18 @@ $padding-right-tablet: 5%;
 				margin-left: $margin-left-mobile;
 			}			
 		}
+
+
+		.carousel-cell {
+
+			img {
+			height: 300px;
+    		width: 100%;
+			padding-left: $padding-left-mobile;
+			padding-right: $padding-right-mobile;
+			}		
+		}
+
 	}	
 	
 	@media only screen and (min-width: 425px) {
