@@ -64,7 +64,6 @@ $padding-right-tablet: 5%;
 
 	h5 {
 		width: 300px;
-		margin-right: $margin-right-mobile;
 		padding-top: 1%;
 		padding-bottom: 20%;
 	}
@@ -229,6 +228,12 @@ $padding-right-tablet: 5%;
 		img {
 			max-width: 50%;
 		}
+	}
+
+	h5 {
+		width: 100%;
+		padding-top: 1%;
+		padding-bottom: 5%;
 	}
 }
 
