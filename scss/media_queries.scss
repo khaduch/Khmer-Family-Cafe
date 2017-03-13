@@ -124,6 +124,12 @@ $padding-right-tablet: 5%;
 		padding-bottom: 3%;
 	}
 
+	.about {
+		p {
+			padding-top: $padding-top-tablet;
+		}
+	}
+
 	.google-maps iframe {
 		position: absolute;
         left: 5%;
@@ -177,58 +183,6 @@ $padding-right-tablet: 5%;
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Tablet View*/
 
