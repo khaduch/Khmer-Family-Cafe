@@ -50,6 +50,8 @@
       margin-right: 5%;
       padding-bottom: 5%; }
     .carousel-cell img {
+      height: 240px;
+      width: 100%;
       padding-left: 5%;
       padding-right: 5%; }
 
