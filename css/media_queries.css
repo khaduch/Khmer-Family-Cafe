@@ -95,7 +95,13 @@
     margin-left: 15%; }
 
   .carousel-cell {
-    -webkit-flex-direction: row; } }
+    -webkit-flex-direction: row; }
+  .carousel-cell img {
+			max-width: 50%;
+		}
+
+
+}
 @media only screen and (max-width: 800px) {
   .hamburger {
     cursor: pointer;
