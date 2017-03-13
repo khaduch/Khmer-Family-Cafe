@@ -2,6 +2,9 @@
 /*Tablet Variables*/
 /*Mobile View*/
 @media only screen and (min-width: 200px) {
+  .intro, .specials, .dishes, .catering, .about, .contact {
+    margin-bottom: 20%; }
+
   header h1 {
     font-size: 35px;
     padding-top: 10%; }
@@ -21,8 +24,7 @@
     font-size: 23px; }
 
   p {
-    font-size: 17px;
-    padding-bottom: 20%; }
+    font-size: 17px; }
 
   .dish {
     margin-right: 5%; }
