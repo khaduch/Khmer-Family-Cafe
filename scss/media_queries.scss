@@ -16,7 +16,7 @@ $padding-top-mobile: 10%;
 
 $padding-bottom-H2-mobile: 5%;
 
-$padding-bottom-P-mobile: 50%;
+$padding-bottom-P-mobile: 20%;
 
 $padding-left-mobile: 5%;
 
@@ -73,6 +73,7 @@ $padding-right-tablet: 5%;
 
 	p {
 		font-size: $font-size-P-mobile;
+		padding-bottom: $padding-bottom-P-mobile;
 
 	}
 
