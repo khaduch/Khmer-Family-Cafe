@@ -54,7 +54,7 @@
       padding-left: 5%;
       padding-right: 5%; }
 
-  .contact li {
+  .contact li, .contact p {
     padding-bottom: 3%; }
 
   .catering p, .about p {
