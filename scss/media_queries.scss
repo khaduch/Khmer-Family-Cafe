@@ -45,7 +45,7 @@ $padding-right-tablet: 5%;
 
 @media only screen and (min-width: 200px) {
 
-	.intro, .specials, .dishes, .catering, .about, .contact {
+	.intro, .dishes, .catering, .about {
 		margin-bottom: $margin-section-bottom;
 	}
 
@@ -125,7 +125,7 @@ $padding-right-tablet: 5%;
 		padding-bottom: 3%;
 	}
 
-	.about {
+	.catering, .about {
 		p {
 			padding-top: $padding-top-tablet;
 		}
