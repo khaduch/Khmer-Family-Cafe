@@ -2,7 +2,7 @@
 /*Tablet Variables*/
 /*Mobile View*/
 @media only screen and (min-width: 200px) {
-  .intro, .specials, .dishes, .catering, .about, .contact {
+  .intro, .dishes, .catering, .about {
     margin-bottom: 20%; }
 
   header h1 {
@@ -57,7 +57,7 @@
   .contact li {
     padding-bottom: 3%; }
 
-  .about p {
+  .catering p, .about p {
     padding-top: 3%; }
 
   .google-maps iframe {
