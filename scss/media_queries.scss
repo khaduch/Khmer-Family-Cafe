@@ -121,9 +121,11 @@ $padding-right-tablet: 5%;
 		}
 	}
 
-	.contact li {
-		padding-bottom: 3%;
-	}
+	.contact {
+		li, p {
+			padding-bottom: 3%;
+		}
+	} 
 
 	.catering, .about {
 		p {
