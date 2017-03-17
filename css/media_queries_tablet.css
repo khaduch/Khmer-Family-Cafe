@@ -4,7 +4,6 @@
 @media only screen and (min-width: 768px) {
   header h1 {
     font-size: 45px;
-    padding-top: 5%;
     padding-right: 5%; }
   header img {
     margin-left: 15%; }
@@ -12,10 +11,14 @@
   .intro {
     margin-bottom: 15%; }
 
+  .specials {
+    margin-bottom: 30%; }
+
   .carousel-cell {
     -webkit-flex-direction: row; }
     .carousel-cell img {
-      max-width: 50%; }
+      max-width: 50%;
+      height: 100%; }
     .carousel-cell .carousel-text {
       margin-right: 10%; }
 
@@ -25,8 +28,15 @@
 
   h5 {
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 5%; } }
+    padding-top: 1%; }
+
+  .parallax {
+    min-height: 600px; }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 55%;
+    overflow: hidden; } }
 @media only screen and (max-width: 800px) {
   .hamburger {
     cursor: pointer;

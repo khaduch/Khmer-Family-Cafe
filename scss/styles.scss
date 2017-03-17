@@ -9,7 +9,7 @@ $black: black;
 
 $white: white;
 
-$padding-bottom: 2%;
+$padding-bottom: 1%;
 $padding-top: 2%;
 
 html, body {
@@ -95,7 +95,7 @@ header {
   height: 100px;
   display: flex;
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10%;
   background-color: black;
 }
 
@@ -318,15 +318,7 @@ h1 {
   display: inline-flex;
 }
 
-a .dish-img {
-  width: 60px;
-  height: 60px;
-  margin-right: 60px;
-  border-style: outset;
-  border-color: #aaa;
-  border-width: 2px;
-  border-radius: 5px;
-}
+
 
 .modal {
   z-index: 10000;

@@ -2,12 +2,21 @@
 /*Tablet Variables*/
 /*Mobile View*/
 @media only screen and (min-width: 200px) {
+  a .dish-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 60px;
+    border-style: outset;
+    border-color: #aaa;
+    border-width: 2px;
+    border-radius: 5px; }
+
   .intro, .dishes, .catering, .about {
     margin-bottom: 20%; }
 
   header h1 {
     font-size: 35px;
-    padding-top: 5%; }
+    padding-top: 4%; }
 
   li a {
     font-size: 17px; }
@@ -25,9 +34,6 @@
 
   p {
     font-size: 17px; }
-
-  .dish {
-    margin-right: 5%; }
 
   .menu-info h3 {
     margin-left: 5%;
@@ -85,9 +91,8 @@
     padding-right: 5%; } }
 @media only screen and (min-width: 200px) and (min-width: 425px) {
   header h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 5%; } }
+    margin-right: 5%; } }
 
 /*# sourceMappingURL=media_queries_mobile.css.map */

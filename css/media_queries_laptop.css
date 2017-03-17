@@ -1,0 +1,60 @@
+/*Mobile Variables*/
+/*Tablet Variables*/
+/*Tablet View*/
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 55px;
+    padding-top: 2%;
+    padding-right: 5%; }
+  header img {
+    margin-left: 20%; }
+
+  h2 {
+    font-size: 35px;
+    padding-left: 5%;
+    padding-top: 2%; }
+
+  li a {
+    font-size: 24px; }
+
+  p {
+    font-size: 23px;
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  .intro {
+    margin-bottom: 20%; }
+
+  .carousel-cell {
+    -webkit-flex-direction: row; }
+    .carousel-cell img {
+      max-width: 50%;
+      height: 100%; }
+    .carousel-cell .carousel-text {
+      margin-right: 10%; }
+
+  .specials {
+    margin-bottom: 20%; }
+
+  .catering img, .about img {
+    width: 100%;
+    height: 600px; }
+
+  h5 {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    font-size: 22px; }
+
+  .contact h2 {
+    padding-left: 0; }
+
+  .parallax {
+    min-height: 700px; }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 45%;
+    overflow: hidden; } }
+
+/*# sourceMappingURL=media_queries_laptop.css.map */
