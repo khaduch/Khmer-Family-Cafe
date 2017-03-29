@@ -33,7 +33,7 @@ $margin-left-tablet: 15%;
 
 $margin-right-tablet: 10%;
 
-$padding-top-tablet: 5%;
+$padding-top-tablet: 2%;
 
 $padding-bottom-tablet: 2%;
 
@@ -59,6 +59,23 @@ $padding-right-tablet: 5%;
 		margin-bottom: $margin-section-bottom;
 	}
 
+	.intro {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.dishes {
+		h5 {
+			padding-bottom: 5%;
+		}
+
+		h3 {
+			padding-top: 10%;
+			padding-bottom: 10%;
+			font-size: 25px;			
+		}
+	}
+
 	header {
 		h1 {
 			font-size: $font-size-H1-mobile;
@@ -72,11 +89,13 @@ $padding-right-tablet: 5%;
 
 	h2 {
 		font-size: $font-size-H2-mobile;
-		padding-top: $padding-top-tablet;
+		padding-top: 5%;
+		padding-bottom: 2%;
 	}
 
 	h3 {
 		padding-top: $padding-top-tablet;
+
 		font-size: $font-size-H3-mobile;
 	}
 
@@ -94,8 +113,10 @@ $padding-right-tablet: 5%;
 
 
 	.menu-info {
+		    padding-right: 15%;
+
 		h3 {
-			margin-left: $margin-left-mobile;
+			margin-left: 10%;
 			padding-top: 4%;
 			display: table;
 			font-size: 20px;
