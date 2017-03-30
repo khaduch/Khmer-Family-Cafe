@@ -12,12 +12,16 @@
     border-radius: 5px; }
 
   .intro, .dishes, .catering, .about {
-    margin-bottom: 20%; }
+    margin-bottom: 30%; }
 
   .intro {
     padding-left: 5%;
     padding-right: 5%; }
+    .intro h2 {
+      font-size: 27px; }
 
+  .dishes h2 {
+    font-size: 33px; }
   .dishes h5 {
     padding-bottom: 5%; }
   .dishes h3 {
@@ -30,10 +34,10 @@
     padding-top: 4%; }
 
   li a {
-    font-size: 17px; }
+    font-size: 20px; }
 
   h2 {
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 5%;
     padding-bottom: 2%; }
 
@@ -42,10 +46,12 @@
     font-size: 23px; }
 
   h4 {
-    font-size: 23px; }
+    font-size: 23px;
+    padding-top: 3%;
+    padding-bottom: 3%; }
 
   p {
-    font-size: 17px; }
+    font-size: 20px; }
 
   .menu-info {
     padding-right: 15%; }
@@ -64,6 +70,8 @@
 
   .carousel-cell {
     -webkit-flex-direction: column; }
+    .carousel-cell h3 {
+      font-size: 25px; }
     .carousel-cell p {
       margin-left: 5%;
       margin-right: 5%;
@@ -74,9 +82,22 @@
       padding-left: 5%;
       padding-right: 5%; }
 
-  .contact li, .contact p {
+  .contact li {
+    font-size: 18px;
+    padding-bottom: 3%; }
+  .contact p {
     padding-bottom: 3%; }
 
+  .location-info p {
+    margin-bottom: 5%; }
+  .location-info h4 {
+    font-size: 27px; }
+
+  .contact-info {
+    margin-top: 5%; }
+
+  .catering h2, .about h2 {
+    font-size: 27px; }
   .catering p, .about p {
     padding-top: 2%; }
 
@@ -91,6 +112,12 @@
       width: 60px;
       height: 60px;
       margin-bottom: 5%; }
+
+  .social-links img {
+    padding-top: 5%;
+    padding-right: 5%;
+    width: 70px;
+    height: 70px; }
 
   .menu-info {
     display: inline-flex; } }

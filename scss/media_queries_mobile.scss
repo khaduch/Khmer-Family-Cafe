@@ -2,11 +2,11 @@
 
 $font-size-H1-mobile: 35px;
 
-$font-size-H2-mobile: 25px;
+$font-size-H2-mobile: 30px;
 
 $font-size-H3-mobile: 23px;
 
-$font-size-P-mobile: 17px;
+$font-size-P-mobile: 20px;
 
 $margin-left-mobile: 5%;
 
@@ -22,7 +22,7 @@ $padding-left-mobile: 5%;
 
 $padding-right-mobile: 5%;
 
-$margin-section-bottom: 20%;
+$margin-section-bottom: 30%;
 
 
 /*Tablet Variables*/
@@ -60,11 +60,21 @@ $padding-right-tablet: 5%;
 	}
 
 	.intro {
+
+		h2 {
+			font-size: 27px;
+		}
+
 		padding-left: 5%;
 		padding-right: 5%;
 	}
 
 	.dishes {
+
+		h2 {
+			font-size: 33px;
+		}
+
 		h5 {
 			padding-bottom: 5%;
 		}
@@ -101,6 +111,8 @@ $padding-right-tablet: 5%;
 
 	h4 {
 		font-size: $font-size-H3-mobile;
+		padding-top: 3%;
+		padding-bottom: 3%;
 	}
 
 	p {
@@ -136,6 +148,10 @@ $padding-right-tablet: 5%;
 	.carousel-cell {
 		-webkit-flex-direction: column;
 
+		h3 {
+			font-size: 25px;
+		}
+
 		p {
 			margin-left: $margin-left-mobile;
 			margin-right: $margin-right-mobile;
@@ -151,12 +167,37 @@ $padding-right-tablet: 5%;
 	}
 
 	.contact {
-		li, p {
+		li {
+			font-size: 18px;
 			padding-bottom: 3%;
 		}
-	} 
+
+		p {
+			padding-bottom: 3%;			
+		}
+	}
+
+	.location-info {
+
+		p {
+			margin-bottom: 5%;
+		}
+
+		h4 {
+			font-size: 27px;
+		}
+	}
+
+	.contact-info {
+		margin-top: 5%;
+	}
 
 	.catering, .about {
+
+		h2 {
+			font-size: 27px;
+		}
+
 		p {
 			padding-top: $padding-top-tablet;
 		}
@@ -176,7 +217,16 @@ $padding-right-tablet: 5%;
 			height: 60px;
 			margin-bottom: 5%;
 		}
-	} 
+	}
+
+	.social-links {
+		img {
+			padding-top: 5%;
+			padding-right: 5%;
+			width: 70px;
+			height: 70px;
+		}
+	}
 
 	.menu-info {
 		display: inline-flex;
