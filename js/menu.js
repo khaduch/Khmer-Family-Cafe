@@ -167,11 +167,15 @@ menu.display = function(foodArray, pageLocation){
 	var Modal = '<div class="modal fade" id="%data%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' + formattedModalDialog + '</div>';
     var formattedModal = Modal.replace("%data%", dish.id);
 
-    var HTMLdishInfoContainer = '<div class="menu-info">' + formattedName + formattedPrice + '</div>';
+    //var HTMLdishInfoContainer = '<div class="menu-info bx">' + `<div class="bx">${formattedName}</div>` + `<div class="bx">${formattedPrice}</div>` + '</div>';
+    var HTMLdishInfoContainer = `<div style="flex-grow: 2">${formattedName}</div>` + `<div >${formattedPrice}</div>`;
+
+
+
     var ModalTrigger = '<a data-toggle="modal" data-target="#%data%">' + formattedPic + '</a>';
 	var formattedModalTrigger = ModalTrigger.replace("%data%", dish.id);
 
-    var HTMLdishContainer = '<div class="row dish col-xs-12 col-sm-6">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
+    var HTMLdishContainer = '<div class="row dish col-xs-12 col-sm-6" style="display: flex;">' + formattedModalTrigger + formattedModal + HTMLdishInfoContainer + '</div>';
 
     $(pageLocation).append(HTMLdishContainer);
   });
