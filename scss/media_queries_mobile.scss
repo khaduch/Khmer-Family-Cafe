@@ -1,0 +1,265 @@
+/*Mobile Variables*/
+
+$font-size-H1-mobile: 35px;
+
+$font-size-H2-mobile: 30px;
+
+$font-size-H3-mobile: 23px;
+
+$font-size-P-mobile: 20px;
+
+$margin-left-mobile: 5%;
+
+$margin-right-mobile: 5%;
+
+$padding-top-mobile: 10%;
+
+$padding-bottom-H2-mobile: 5%;
+
+$padding-bottom-P-mobile: 20%;
+
+$padding-left-mobile: 5%;
+
+$padding-right-mobile: 5%;
+
+$margin-section-bottom: 30%;
+
+
+/*Tablet Variables*/
+
+$font-size-H1-tablet: 45px;
+
+$margin-left-tablet: 15%;
+
+$margin-right-tablet: 10%;
+
+$padding-top-tablet: 2%;
+
+$padding-bottom-tablet: 2%;
+
+$padding-right-tablet: 5%;
+
+
+
+/*Mobile View*/
+
+@media only screen and (min-width: 200px) {
+
+	a .dish-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 60px;
+  border-style: outset;
+  border-color: #aaa;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+	.intro, .dishes, .catering, .about {
+		margin-bottom: $margin-section-bottom;
+	}
+
+	.intro {
+
+		h2 {
+			font-size: 27px;
+		}
+
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.dishes {
+
+		h2 {
+			font-size: 33px;
+		}
+
+		h5 {
+			padding-bottom: 5%;
+		}
+
+		h3 {
+			padding-top: 10%;
+			padding-bottom: 10%;
+			font-size: 25px;			
+		}
+	}
+
+	header {
+		h1 {
+			font-size: $font-size-H1-mobile;
+			padding-top: 4%;
+		}
+	}
+
+	li a {
+		font-size: $font-size-P-mobile;
+	}
+
+	h2 {
+		font-size: $font-size-H2-mobile;
+		padding-top: 5%;
+		padding-bottom: 2%;
+	}
+
+	h3 {
+		padding-top: $padding-top-tablet;
+
+		font-size: $font-size-H3-mobile;
+	}
+
+	h4 {
+		font-size: $font-size-H3-mobile;
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	p {
+		font-size: $font-size-P-mobile;
+	}
+
+
+
+
+
+
+	.menu-info {
+		    padding-right: 15%;
+
+		h3 {
+			margin-left: 10%;
+			padding-top: 4%;
+			display: table;
+			font-size: 20px;
+		}
+
+		p {
+			padding-top: 5%;
+			margin-left: $margin-left-mobile;
+			padding-bottom: $padding-bottom-H2-mobile;	
+		}
+	}
+
+	.parallax {
+		min-height: 500px;
+	}
+	
+	.carousel-cell {
+		-webkit-flex-direction: column;
+
+		h3 {
+			font-size: 25px;
+		}
+
+		p {
+			margin-left: $margin-left-mobile;
+			margin-right: $margin-right-mobile;
+			padding-bottom: $padding-bottom-H2-mobile;
+		}
+
+		img {
+			height: 240px;
+    		width: 100%;
+			padding-left: $padding-left-mobile;
+			padding-right: $padding-right-mobile;
+		}
+	}
+
+	.contact {
+		li {
+			font-size: 18px;
+			padding-bottom: 3%;
+		}
+
+		p {
+			padding-bottom: 3%;			
+		}
+	}
+
+	.location-info {
+
+		p {
+			margin-bottom: 5%;
+		}
+
+		h4 {
+			font-size: 27px;
+		}
+	}
+
+	.contact-info {
+		margin-top: 5%;
+	}
+
+	.catering, .about {
+
+		h2 {
+			font-size: 27px;
+		}
+
+		p {
+			padding-top: $padding-top-tablet;
+		}
+	}
+
+	.google-maps iframe {
+		position: absolute;
+        width: 100%;
+        height: 100%;
+	}
+
+
+	.social {
+		padding-bottom: $padding-bottom-H2-mobile;
+		img {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 5%;
+		}
+	}
+
+	.social-links {
+		img {
+			padding-top: 5%;
+			padding-right: 5%;
+			width: 70px;
+			height: 70px;
+		}
+	}
+
+	.menu-info {
+		display: inline-flex;
+	}
+
+
+	@media only screen and (min-width: 375px) {
+
+		header {
+			img {
+				margin-left: $margin-left-mobile;
+			}			
+		}
+
+
+		.carousel-cell {
+
+			img {
+			height: 300px;
+    		width: 100%;
+			padding-left: $padding-left-mobile;
+			padding-right: $padding-right-mobile;
+			}		
+		}
+
+	}	
+	
+	@media only screen and (min-width: 425px) {
+
+		header h1 {
+			font-size: 40px;
+			margin-left: $margin-left-mobile;
+			margin-right: $margin-right-mobile;
+		}
+	}
+}

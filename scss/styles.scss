@@ -4,25 +4,38 @@
   for styling higher level screensize layouts will be in the
   media_queries.css file.
 */
+
+$black: black;
+
+$white: white;
+
+$padding-bottom: 1%;
+$padding-top: 2%;
+
 html, body {
   color: white;
-  background-color: black;
-  font-family: sans-serif;
-  line-height: 1.2;
-  overflow-x: hidden; }
+  background-color: $black;
+    font-family: sans-serif;
+    line-height: 1.2;
+  overflow-x:hidden;
+}
 
 p, h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
-  padding-bottom: 1%; }
+  padding-bottom: $padding-bottom;
+}
 
 li {
-  font-family: 'Poiret One', cursive; }
+  font-family: 'Poiret One', cursive;
+}
 
 .col-xs-12 {
   padding-left: 5px;
-  padding-right: 5px; }
+  padding-right: 5px;
+}
 
 /* ======================================               HAMBURGER DROPDOWN NAV                ======================================  */
+
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -30,20 +43,24 @@ li {
   z-index: 9999;
   width: 100%;
   height: 50px;
-  background-color: black; }
+  background-color: black;
+}
 
 *, *:before, *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .clearfix:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 .menu {
-  background-color: black; }
+  background-color: black;
+}
 
 ul a {
   display: block;
@@ -52,264 +69,306 @@ ul a {
   font-weight: bold;
   text-align: center;
   color: #aaa;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-.dish a {
-  width: 60px;
-  height: 60px; }
+.dish {
+   a {
+    width: 60px;
+    height: 60px;
+  } 
+} 
 
 nav li {
   float: left;
-  width: 20%; }
+  width: 20%;
+}
 
 nav li:last-child {
-  border-right: none; }
+  border-right: none;
+}
 
 /* ======================================               HOME                ======================================  */
+
 header {
   height: 100px;
   display: flex;
   margin-top: 20px;
   padding-bottom: 10%;
-  background-color: black; }
+  background-color: black;
+}
 
 header img {
   width: 100px;
   height: 100px;
-  padding-top: 5px; }
+  padding-top: 5px;
+}
 
 h1 {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+}
 
 .parallax {
-  padding-bottom: 5%;
-  /* The image used */
-  background-image: url("pho.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+    padding-bottom: 5%;
+    /* The image used */
+    background-image: url("pho.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* ======================================         DAILY SPECIALS            ======================================  */
+
+
 /* How TO - Modal Images (w3schools.com): http://www.w3schools.com/howto/howto_css_modal_images.asp */
+
 #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15, #myImg16, #myImg17 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s; }
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover,
 #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover, #myImg17:hover {
-  opacity: 0.7; }
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */ }
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 
 /* Modal Content (image) */
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px; }
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
 
 /* Caption of Modal Image */
 #caption1, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10,
 #caption11, #caption12, #caption13, #caption14, #caption15, #caption16, #caption17 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px; }
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
 
 /* Add Animation */
 .modal-content, #caption1, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10,
 #caption11, #caption12, #caption13, #caption14, #caption15, #caption16, #caption17 {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s; }
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
 
 @-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
 @keyframes zoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
 /* The Close Button */
 .close {
-  position: absolute;
-  bottom: 5px;
-  left: 45px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
+    position: absolute;
+    bottom: 5px;
+    left: 45px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer; }
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* external css: flickity.css */
-* {
-  box-sizing: border-box; }
+
+* { box-sizing: border-box; }
 
 .carousel {
-  background: black; }
+  background: black;
+}
 
 .carousel-cell {
   width: 100%;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
-  display: flex;
+  display:         flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  align-items: center;
-  padding-bottom: 5%; }
-  .carousel-cell img {
+          align-items: center;
+      padding-bottom: 5%;
+
+  img {
     display: block;
+
     /* dim unselected */
     opacity: 0.7;
     -webkit-transform: scale(0.85);
-    transform: scale(0.85);
+            transform: scale(0.85);
     -webkit-filter: blur(5px);
-    filter: blur(5px);
+            filter: blur(5px);
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-    transition: opacity 0.3s, transform 0.3s, filter 0.3s; }
-  .carousel-cell p {
+            transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  }
+  
+  p {
     display: block;
     max-width: 90%;
     max-height: 100%;
     /* dim unselected */
     opacity: 0.7;
     -webkit-transform: scale(0.85);
-    transform: scale(0.85);
+            transform: scale(0.85);
     -webkit-filter: blur(5px);
-    filter: blur(5px);
+            filter: blur(5px);
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-    transition: opacity 0.3s, transform 0.3s, filter 0.3s; }
+            transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  }
+}
 
 /* brighten selected image */
-.carousel-cell.is-selected img {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-filter: none;
-  filter: none; }
-.carousel-cell.is-selected p {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-filter: none;
-  filter: none; }
+.carousel-cell.is-selected {
+  img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: none;
+            filter: none;
+  }
+
+  p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: none;
+            filter: none;
+  }
+} 
 
 /* buttons, no circle */
+
 .flickity-prev-next-button {
   top: -20%;
   width: 60px;
   height: 60px;
   background: transparent;
-  opacity: 0.6; }
-
+  opacity: 0.6;
+}
 .flickity-prev-next-button:hover {
   background: transparent;
-  opacity: 1; }
-
+  opacity: 1;
+}
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white; }
-
+  fill: white;
+}
 .flickity-prev-next-button.no-svg {
-  color: white; }
-
+  color: white;
+}
 /* closer to edge */
-.flickity-prev-next-button.previous {
-  left: 0; }
-
-.flickity-prev-next-button.next {
-  right: 0; }
-
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
-  display: none; }
+  display: none;
+}
 
 /* ======================================        MENU           ======================================  */
+
 .dish {
   display: inline-flex;
   padding-bottom: 10%;
-  margin-right: 5%; }
+  margin-right: 5%;
+}
 
 .menu-title {
-  display: inline-flex; }
+  display: inline-flex;
+}
 
 .dish {
-  width: 100%; }
+  width: 100%;
+}
 
 .modal {
-  z-index: 10000; }
-  .modal h4 {
-    color: black; }
-  .modal p {
-    color: black; }
+  z-index: 10000;
+
+  h4 {
+    color: black;
+  }
+
+  p {
+    color: black;
+  }
+
+}
 
 /* ======================================        CONTACT US         ======================================  */
-.contact {
-  padding-bottom: 5%; }
+
+  .contact {
+    padding-bottom: 5%;
+  }
 
 ul {
   list-style: none;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+}
 
 /* ======================================        GOOGLE MAPS         ======================================  */
+
 .google-maps {
-  position: relative;
-  padding-bottom: 75%;
-  overflow: hidden; }
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    overflow: hidden;
+}
 
 /* ======================================        SOCIAL MEDIA         ======================================  */
+
 .social-links {
-  display: inline-flex; }
+  display: inline-flex;
+}
 
 .copyright {
-  padding-bottom: 5%; }
-
-/*# sourceMappingURL=styles.css.map */
+  padding-bottom: 5%;
+}

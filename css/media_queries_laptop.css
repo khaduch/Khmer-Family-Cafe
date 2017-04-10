@@ -1,0 +1,74 @@
+/*Mobile Variables*/
+/*Tablet Variables*/
+/*Tablet View*/
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 55px;
+    padding-top: 2%;
+    padding-right: 5%;
+    margin-left: 0; }
+
+  h2 {
+    font-size: 32px;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+
+  li a {
+    font-size: 24px; }
+
+  p {
+    font-size: 21px;
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  .intro {
+    margin-bottom: 20%; }
+    .intro p {
+      padding-left: 0; }
+
+  .carousel-cell {
+    -webkit-flex-direction: row; }
+    .carousel-cell img {
+      max-width: 50%;
+      height: 100%; }
+    .carousel-cell .carousel-text {
+      margin-right: 10%; }
+      .carousel-cell .carousel-text h3 {
+        font-size: 28px;
+        padding-right: 10%; }
+
+  .specials {
+    margin-bottom: 20%; }
+
+  .catering, .about {
+    display: flex; }
+    .catering h2, .about h2 {
+      padding-top: 25%; }
+    .catering p, .about p {
+      padding-top: 0;
+      padding-bottom: 25%; }
+    .catering img, .about img {
+      width: 50%;
+      height: 50%; }
+
+  h5 {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    font-size: 22px; }
+
+  .contact h2 {
+    padding-left: 0; }
+
+  .social-links {
+    margin-top: 5%; }
+
+  .parallax {
+    min-height: 700px; }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 45%;
+    overflow: hidden; } }
+
+/*# sourceMappingURL=media_queries_laptop.css.map */

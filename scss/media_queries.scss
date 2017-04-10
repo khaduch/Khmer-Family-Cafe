@@ -1,0 +1,286 @@
+/*Mobile Variables*/
+
+$font-size-H1-mobile: 35px;
+
+$font-size-H2-mobile: 25px;
+
+$font-size-H3-mobile: 23px;
+
+$font-size-P-mobile: 17px;
+
+$margin-left-mobile: 5%;
+
+$margin-right-mobile: 5%;
+
+$padding-top-mobile: 10%;
+
+$padding-bottom-H2-mobile: 5%;
+
+$padding-bottom-P-mobile: 20%;
+
+$padding-left-mobile: 5%;
+
+$padding-right-mobile: 5%;
+
+$margin-section-bottom: 20%;
+
+
+/*Tablet Variables*/
+
+$font-size-H1-tablet: 45px;
+
+$margin-left-tablet: 15%;
+
+$margin-right-tablet: 10%;
+
+$padding-top-tablet: 3%;
+
+$padding-bottom-tablet: 2%;
+
+$padding-right-tablet: 5%;
+
+
+
+/*Mobile View*/
+
+@media only screen and (min-width: 200px) {
+
+	.intro, .dishes, .catering, .about {
+		margin-bottom: $margin-section-bottom;
+	}
+
+	header {
+		h1 {
+			font-size: $font-size-H1-mobile;
+			padding-top: $padding-top-mobile;
+		}
+	}
+
+	li a {
+		font-size: $font-size-P-mobile;
+	}
+
+	h2 {
+		font-size: $font-size-H2-mobile;
+		padding-top: $padding-top-tablet;
+	}
+
+	h3 {
+		padding-top: $padding-top-tablet;
+		font-size: $font-size-H3-mobile;
+	}
+
+	h4 {
+		font-size: $font-size-H3-mobile;
+	}
+
+	p {
+		font-size: $font-size-P-mobile;
+	}
+
+
+
+	.dish {
+		  margin-right: $margin-right-mobile;
+	}
+
+
+	.menu-info {
+		h3 {
+			margin-left: $margin-left-mobile;
+			padding-top: 4%;
+			display: table;
+			font-size: 20px;
+		}
+
+		p {
+			padding-top: 5%;
+			margin-left: $margin-left-mobile;
+			padding-bottom: $padding-bottom-H2-mobile;	
+		}
+	}
+
+	.parallax {
+		min-height: 500px;
+	}
+	
+	.carousel-cell {
+		-webkit-flex-direction: column;
+
+		p {
+			margin-left: $margin-left-mobile;
+			margin-right: $margin-right-mobile;
+			padding-bottom: $padding-bottom-H2-mobile;
+		}
+
+		img {
+			height: 240px;
+    		width: 100%;
+			padding-left: $padding-left-mobile;
+			padding-right: $padding-right-mobile;
+		}
+	}
+
+	.contact {
+		li, p {
+			padding-bottom: 3%;
+		}
+	} 
+
+	.catering, .about {
+		p {
+			padding-top: $padding-top-tablet;
+		}
+	}
+
+	.google-maps iframe {
+		position: absolute;
+        width: 100%;
+        height: 100%;
+	}
+
+
+	.social {
+		padding-bottom: $padding-bottom-H2-mobile;
+		img {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 5%;
+		}
+	} 
+
+	.menu-info {
+		display: inline-flex;
+	}
+
+
+	@media only screen and (min-width: 375px) {
+
+		header {
+			img {
+				margin-left: $margin-left-mobile;
+			}			
+		}
+
+
+		.carousel-cell {
+
+			img {
+			height: 300px;
+    		width: 100%;
+			padding-left: $padding-left-mobile;
+			padding-right: $padding-right-mobile;
+			}		
+		}
+
+	}	
+	
+	@media only screen and (min-width: 425px) {
+
+		header h1 {
+			font-size: $font-size-H1-tablet;
+			margin-left: $margin-left-mobile;
+			margin-right: $margin-right-mobile;
+			padding-top: $padding-top-tablet;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet View*/
+
+@media only screen and (min-width: 768px) {
+
+	header {
+		h1 {
+			font-size: $font-size-H1-tablet;
+			padding-top: $padding-top-tablet;
+			padding-right: $padding-right-tablet;
+		}
+
+		img {
+			margin-left: $margin-left-tablet;
+		}
+	}
+
+	.carousel-cell {
+		-webkit-flex-direction: row;
+		img {
+			max-width: 50%;
+		}
+
+		.carousel-text {
+			margin-right: $margin-right-tablet;
+		}
+	}
+
+	.catering, .about {
+		img {
+			width: 100%;
+    		height: 450px;
+		}
+	}
+
+	h5 {
+		width: 100%;
+		padding-top: 1%;
+		padding-bottom: 5%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+  .hamburger {
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+    background-color: black;
+  }
+
+  .line {
+    border-bottom: 2px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+
+  /* Our styles here */
+  nav li {
+    width: 100%;
+  }
+
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+
+  .open {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+	.menu {
+		display: flex;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+/*===================================================================*/
+

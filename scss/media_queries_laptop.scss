@@ -1,0 +1,162 @@
+/*Mobile Variables*/
+
+$font-size-H1-mobile: 35px;
+
+$font-size-H2-mobile: 25px;
+
+$font-size-H3-mobile: 23px;
+
+$font-size-P-mobile: 17px;
+
+$margin-left-mobile: 5%;
+
+$margin-right-mobile: 5%;
+
+$padding-top-mobile: 10%;
+
+$padding-bottom-H2-mobile: 5%;
+
+$padding-bottom-P-mobile: 20%;
+
+$padding-left-mobile: 5%;
+
+$padding-right-mobile: 5%;
+
+$margin-section-bottom: 20%;
+
+
+/*Tablet Variables*/
+
+$font-size-H1-tablet: 45px;
+
+$margin-left-tablet: 15%;
+
+$margin-right-tablet: 10%;
+
+$padding-top-tablet: 5%;
+
+$padding-bottom-tablet: 2%;
+
+$padding-right-tablet: 5%;
+
+
+
+
+
+
+
+
+
+/*Tablet View*/
+
+@media only screen and (min-width: 1024px) {
+
+	header {
+		h1 {
+			font-size: 55px;
+			padding-top: 2%;
+			padding-right: 5%;
+			margin-left: 0;
+		}
+
+	}
+
+	h2 {
+		font-size: 32px;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	li a {
+    	font-size: 24px;
+	}
+
+	p {
+		font-size: 21px;
+		padding-left: 5%;
+    	padding-right: 5%;
+	}
+
+	.intro {
+		margin-bottom: 20%;
+
+		p {
+			padding-left: 0;
+		}
+	}
+
+	.carousel-cell {
+		-webkit-flex-direction: row;
+		img {
+			max-width: 50%;
+			height: 100%;
+		}
+
+		.carousel-text {
+			margin-right: $margin-right-tablet;
+
+			h3 {
+				font-size: 28px;
+				padding-right: 10%;
+			}
+		}
+	}
+
+	.specials {
+		margin-bottom: 20%;
+	}
+
+	.catering, .about {
+
+		display: flex;
+
+		h2 {
+			padding-top: 25%;
+
+		}
+
+		p {
+			padding-top: 0;
+			padding-bottom: 25%;			
+		}
+
+		img {
+			width: 50%;
+    		height: 50%;
+		}
+	}
+
+	h5 {
+		width: 100%;
+		padding-top: 1%;
+		padding-bottom: 0;
+		font-size: 22px;
+	}
+
+	.contact {
+
+
+
+		 h2 {
+			padding-left: 0;
+		}		
+	}
+
+	.social-links {
+		margin-top: 5%;
+	}
+
+
+
+	.parallax {
+		min-height: 700px;
+	}
+
+	.google-maps {
+	    position: relative;
+	    padding-bottom: 45%; // This is the aspect ratio
+	    overflow: hidden;
+	}
+
+
+}

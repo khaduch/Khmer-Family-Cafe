@@ -10,9 +10,17 @@
 
 	<title>Khmer Family Cafe - Fresno, CA</title>
 
+	<link rel="shortcut icon" href="images/favicon.ico">
+
 	<link rel="stylesheet" type="text/css" href="css/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="scss/styles.scss">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/media_queries.css">
+	<link rel="stylesheet" type="text/css" href="scss/media_queries_mobile.scss">
+	<link rel="stylesheet" type="text/css" href="css/media_queries_mobile.css">
+	<link rel="stylesheet" type="text/css" href="scss/media_queries_tablet.scss">
+	<link rel="stylesheet" type="text/css" href="css/media_queries_tablet.css">
+	<link rel="stylesheet" type="text/css" href="scss/media_queries_laptop.scss">
+	<link rel="stylesheet" type="text/css" href="css/media_queries_laptop.css">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
 
 	<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js"></script>
@@ -28,7 +36,7 @@
 			<nav class="fixed-nav-bar">
 				<header>
 					<img src="images/logo-nobackground.png" alt="logo">
-					<h1>Khmer Family Cafe</h1>
+					<h1 class="text-center">Khmer Family Cafe</h1>
 				</header>
 
 			    <div class="hamburger">
@@ -50,163 +58,114 @@
 
 	<!-- 		Introduction 			-->
 			<div class="col-xs-12 intro">
-				<h4>Homemade Traditional Cambodian Cuisine...</h4>
-				<p>This is an introduction paragraph for the restaurant, describing the type of food served and a little description of the origins of the dishes. This is meant to antice and intrigue customers, drawing them in to want to see what these dishes are. This will also describe how the restaurant is family owned and how it serves authentic Cambodian food found no where else in the Central Valley.</p>
+				<h2>Homemade Traditional Cambodian Cuisine...</h2>
+				<p>We are a family owned restaurant bringing back home-style Cambodian cuisine to the Central Valley. Everything is made fresh to order, using the finest ingredients, and traditional recipes from Cambodia.</p>
 			</div>
 		</div>
 
 	<!-- 		Daily Specials 			-->
-		<div class="row" id="daily-specials">
+		<div class="row specials" id="daily-specials">
 			<h2 class="text-center daily-specials">Daily Specials</h2>
 			<!-- Flickity HTML init -->
-			<div class="carousel js-flickity" data-flickity>
-				<div class="carousel-cell">
-					<img src="images/dishes/ba-baw.jpg" class="img-responsive" alt="ba-baw" />
-					<p class="description-specials">Description box 1</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/Salaw-Machu-Youn.jpg" class="img-responsive" alt="Salaw-Machu-Youn" />
-					<p class="description-specials">Description box 2</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/Loc-Lac.jpg" class="img-responsive" alt="Loc-Lac" />
-					<p class="description-specials">Description box 3</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/Vermicilli-bay-hoy.jpg" class="img-responsive" alt="Vermicilli-bay-hoy" />
-					<p class="description-specials">Description box 4</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/Ban-Xeo.jpg" class="img-responsive" alt="Ban-Xeo" />
-					<p class="description-specials">Description box 5</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/chicken-curry.jpg" class="img-responsive" alt="chicken-curry" />
-					<p class="description-specials">Description box 6</p>
-				</div>
-
-				<div class="carousel-cell">
-					<img src="images/dishes/pahlok-ktiss.jpg" class="img-responsive" alt="pahlok-ktiss" />
-					<p class="description-specials">Description box 7</p>
-				</div>
-			</div>
+			<div class="carousel js-flickity" id="carousel" data-flickity='{ "pageDots": false }'></div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<!-- 		Menu 					-->
-		<div class="col-xs-12 dishes">
-			<h2 class="text-center" id="menu">Menu</h2>
+		<div class="col-xs-12 dishes" id="menu">
+			<h2 class="text-center">Menu</h2>
+			<h5 class="text-center">(Click on the image of a dish for details.)</h5>	
 			<h3 class="text-center">Main Dishes</h3>
 
 			<div id="main-column-1" class="col-sm-6"></div>
 			<div id="main-column-2" class="col-sm-6"></div>
 
-
-
 			<div id="dessert-column" class="col-sm-6">
-				<h3 class="text-center">Desserts</h3>
+				<h3 class="text-center col-xs-12 col-sm-6">Desserts</h3>
 			</div>
 			<div id="drinks-column" class="col-sm-6">
-				<h3 class="text-center">Drinks</h3>
+				<h3 class="text-center col-xs-12 col-sm-6">Drinks</h3>
 			</div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- 		Catering 		-->
 		<div class="col-xs-12 catering">
-			<h2 class="text-center" id="catering">Catering</h2>
-			<img src="images/dishes/catering.jpg" class="img-responsive">
-			<h4>Have A Large Party or a Special Event? We Cater to You!</h4>
-			<p>This paragraph will describe your catering service details such as how to order, prices, size of parties you cater to, etc. this will also describe which dishes are available for catering and quantities of each dish.</p>
+			<img src="images/catering.jpg" class="img-responsive">
+			<div class="info">
+				<h2 class="text-center" id="catering">Have A Large Party or a Special Event? We Cater to You!</h2>			
+				<p>We also do catering for groups of various sizes for special events and get togethers. Call us for information on
+				prices and details.</p>			
+			</div>
 		</div>
 
 		<!-- 		Who We Are 		-->
 		<div class="col-xs-12 about">
-			<h2 class="text-center" id="who-we-are">Who We Are</h2>
 			<img src="images/family-cheers.jpg" class="img-responsive">
-			<p>This paragraph will describe who you are as a family-owned restaurant. This is sort of the "back-story" of your restaurant and where your food was inspired from. Also, if your restaurant actively hosts special events, that would be good to mention here too!</p>
+			<div class="info">
+				<h2 class="text-center" id="who-we-are">Who We Are</h2>
+				<p>We are a small family-owned restaurant local to Fresno. We pride ourselves in offering fresh homestyle Khmer cuisine
+				native to Cambodia. Our services include dine-in, carryout, and even catering. Opened since July 2016, we also host special
+				events and Khmer Workshops. Feel free to checkout our Facebook and Instagram feeds for details on upcoming events and new specials!</p>				
+			</div>
+
 		</div>
 
 		<!-- 		Contact Us 		-->
-		<div class="col-xs-12 contact">
-			<h2 class="text-center" id="contact">Contact Us</h2>
-			<h4 class="text-center">Opening Hours</h4>
+		<div class="contact">
 
-			<ul>
-				<li>Mon 8:30am - 8:30pm</li>
-				<li>Tues 8:30am - 8:30pm</li>
-				<li>Weds 8:30am - 8:30pm</li>
-				<li>Thurs 8:30am - 8:30pm</li>
-				<li>Fri 8:30am - 10:00pm</li>
-				<li>Sat 8:30am - 10:00pm</li>
-				<li>Mon 8:30am - 8:00pm</li>
-			</ul>
+			<h2 class="text-center">Contact Us</h2>
 
-			<!-- 		Catering 		-->
-			<h4 class="text-center">Location</h4>
+			<div class="col-md-6 location-info">
+				<div class="google-maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.278740560634!2d-119.74598504947069!3d36.743811540418086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e5ed82c1a99%3A0xe495ff88a4ac9bbf!2sKhmer+Family+Cafe!5e0!3m2!1sen!2sus!4v1483335977372" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-			<div class="google-maps">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.278740560634!2d-119.74598504947069!3d36.743811540418086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e5ed82c1a99%3A0xe495ff88a4ac9bbf!2sKhmer+Family+Cafe!5e0!3m2!1sen!2sus!4v1483335977372" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<p class="text-center" style="">133 North Maple Ave.<br>Fresno, CA 93702<br>Phone: 478-4802</p>
+				</div>
+			
+				<!-- 		Location 		-->
+				<h4 class="text-center">Location</h4>
+
+				<p class="text-center" style="">133 North Maple Ave.<br>Fresno, CA 93702<br>Phone: 478-4802</p>			
+
+				
+			</div>		
+
+			<div class="col-md-6 contact-info">
+
+				<h4 class="text-center" id="contact">Opening Hours</h4>
+
+				<ul>
+					<li>Mon 8:30am - 7:00pm</li>
+					<li>Tues 8:30am - 7:00pm</li>
+					<li>Weds 8:30am - 7:00pm</li>
+					<li>Thurs 8:30am - 7:00pm</li>
+					<li>Fri 8:30am - 7:00pm</li>
+					<li>Sat 8:30am - 7:00pm</li>
+					<li>Sun 8:30am - 6:00pm</li>
+				</ul>				
 			</div>
+
+
+
+
+
 		</div>
 
 		<!-- 		Social Media 		-->
-		<div class="social col-xs-12" align="center">
+		<div class="social" align="center">
 			<h3 class="text-center">Follow Us On</h3>
-			<div class="social-links">
-				<img src="images/facebook.png" class="img-responsive">
-				<img src="images/instagram.png" class="img-responsive">
-				<img src="images/yelp.png" class="img-responsive">
+			<div class="social-links">			
+				<a href="https://www.facebook.com/khmerfamily/" target="_blank">
+					<img src="images/facebook.png" class="img-responsive">
+				</a>
+				<a href="https://www.instagram.com/khmerfamilycafe/" target="_blank">
+					<img src="images/instagram.png" class="img-responsive">
+				</a>
+				<a href="https://www.yelp.com/biz/khmer-family-cafe-fresno" target="_blank">
+					<img src="images/yelp.png" class="img-responsive">
+				</a>
 			</div>
 		</div>
-		&copy; 2016<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Khmer Family Cafe.
+
+		<div class="copyright text-center">&copy; 2016<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Khmer Family Cafe.</div>
 	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -216,6 +175,8 @@
 	<script type="text/javascript" src="js/strings.js"></script>
 
 	<script type="text/javascript" src="js/menu.js"></script>
+
+	<script type="text/javascript" src="js/specials.js"></script>
 
 	<script type="text/javascript" src="js/function.js"></script>
 </body>
