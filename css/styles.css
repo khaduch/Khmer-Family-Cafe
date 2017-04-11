@@ -4,7 +4,6 @@
   for styling higher level screensize layouts will be in the
   media_queries.css file.
 */
-
 html, body {
   color: white;
   background-color: black;
@@ -274,16 +273,15 @@ h2 {
 
 /* ======================================        MENU           ======================================  */
 .dish {
-  /*display: inline-flex;*/
+  display: inline-flex;
   padding-bottom: 10%;
   margin-right: 5%; }
 
 .menu-title {
-  display: inline-flex;
-}
+  display: inline-flex; }
 
 .dish {
-  width: 100%; }
+  width: 110%; }
 
 .modal {
   z-index: 10000; }
