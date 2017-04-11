@@ -73,7 +73,7 @@ header {
   height: 100px;
   display: flex;
   margin-top: 20px;
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
   background-color: black; }
 
 header img {
@@ -281,7 +281,7 @@ h2 {
   display: inline-flex; }
 
 .dish {
-  width: 100%; }
+  width: 110%; }
 
 .modal {
   z-index: 10000; }

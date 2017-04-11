@@ -1,5 +1,14 @@
 /*Mobile Variables*/
 /*Tablet Variables*/
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .carousel-cell img {
+    height: 400px; } }
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .carousel-cell img {
+    height: 450px; } }
+@media only screen and (min-width: 701px) {
+  .parallax {
+    min-height: 650px; } }
 /*Tablet View*/
 @media only screen and (min-width: 768px) {
   header h1 {
@@ -19,7 +28,7 @@
     font-size: 20px; }
 
   p {
-    font-size: 20px; }
+    font-size: 18px; }
 
   .specials h3 {
     font-size: 27px; }
@@ -28,7 +37,9 @@
     padding-left: 5%; }
     .dishes h3 {
       padding-top: 2%;
-      padding-bottom: 5%; }
+      padding-bottom: 5%;
+      font-size: 20px;
+      width: 200px; }
     .dishes h2 {
       font-size: 35px;
       padding-bottom: 0; }
@@ -61,13 +72,13 @@
     width: 100%;
     padding-top: 1%; }
 
-  .parallax {
-    min-height: 600px; }
-
   .google-maps {
     position: relative;
     padding-bottom: 55%;
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  #main-column-1, #main-column-2, #dessert-column, #drinks-column {
+    padding-right: 5%; } }
 @media only screen and (max-width: 800px) {
   .hamburger {
     cursor: pointer;
