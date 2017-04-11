@@ -121,7 +121,7 @@ var menu = {
 		{
 			"id": "Nam-Va",
 			"name": "Nam Va",
-			"price": "$5",
+			"price": "$5.00",
 			"description": "Traditional Cambodian dessert with shaved ice with toppings of: leechee jelly, grass jelly, red beans, green beans, basil seed, green tapioca, palm sugar, green and red Asian syrup, and condensed milk.",
 			"image": "images/dishes/Nam-Va.jpg",
 			"altText": "Nam-Va"
@@ -140,7 +140,7 @@ var menu = {
 		{
 			"id": "thai-tea",
 			"name": "Thai Tea or Ice Coffee",
-			"price": "$5",
+			"price": "$5.00",
 			"description": "Your choice of either traditional Thai tea or ice coffee served over ice.",
 			"image": "images/dishes/drinks.jpg",
 			"altText": "thai-tea"
