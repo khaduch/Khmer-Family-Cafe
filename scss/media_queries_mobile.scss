@@ -266,5 +266,17 @@ $padding-right-tablet: 5%;
 			margin-left: $margin-left-mobile;
 			margin-right: $margin-right-mobile;
 		}
+
+		.dishes {
+			h3 {
+				width: 250px;
+			}
+		}
+
+		.parallax {
+		    min-height: 600px;
+		}			
 	}
+
+
 }
