@@ -75,6 +75,10 @@
     width: 300px; }
 
   .carousel-cell--height {
-    height: 600px; } }
+    height: 600px; }
+
+  .row-reverse {
+    display: flex;
+    flex-direction: row-reverse; } }
 
 /*# sourceMappingURL=media_queries_laptop.css.map */
