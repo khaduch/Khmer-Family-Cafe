@@ -20,13 +20,18 @@ html, body {
   overflow-x:hidden;
 }
 
-p, h1, h2, h3, h4, h5, header {
+h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
   padding-bottom: $padding-bottom;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: $padding-bottom;
+}
+
 li {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .col-xs-12 {
