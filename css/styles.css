@@ -11,12 +11,16 @@ html, body {
   line-height: 1.2;
   overflow-x: hidden; }
 
-p, h1, h2, h3, h4, h5, header {
+h1, h2, h3, h4, h5, header {
   font-family: 'Poiret One', cursive;
   padding-bottom: 1%; }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 1%; }
+
 li {
-  font-family: 'Poiret One', cursive; }
+  font-family: 'Roboto', sans-serif; }
 
 .col-xs-12 {
   padding-left: 5px;
