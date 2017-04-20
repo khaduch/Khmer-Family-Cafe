@@ -73,6 +73,10 @@ $padding-right-tablet: 5%;
 
 @media only screen and (min-width: 768px) {
 
+	.intro, .dishes, .catering, .about {
+		margin-bottom: 10%;
+	}
+
 
 	header {
 		h1 {
@@ -126,7 +130,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.intro {
-		margin-bottom: 15%;
+		margin-bottom: 10%;
 
 		h2 {
 			font-size: 30px;
@@ -134,7 +138,7 @@ $padding-right-tablet: 5%;
 	}
 
 	.specials {
-		margin-bottom: 30%;
+		margin-bottom: 10%;
 	}
 
 	.carousel-cell {
