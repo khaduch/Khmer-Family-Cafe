@@ -168,5 +168,8 @@ $padding-right-tablet: 5%;
 		height: 600px;
 	}
 
+	.row-reverse {
+		display: flex; flex-direction: row-reverse; 
+	}
 
 }
