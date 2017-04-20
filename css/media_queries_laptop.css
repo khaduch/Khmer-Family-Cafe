@@ -72,6 +72,9 @@
 
   .dishes h3 {
     font-size: 23px;
-    width: 300px; } }
+    width: 300px; }
+
+  .carousel-cell--height {
+    height: 600px; } }
 
 /*# sourceMappingURL=media_queries_laptop.css.map */
