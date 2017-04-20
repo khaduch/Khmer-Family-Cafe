@@ -11,6 +11,9 @@
     min-height: 650px; } }
 /*Tablet View*/
 @media only screen and (min-width: 768px) {
+  .intro, .dishes, .catering, .about {
+    margin-bottom: 10%; }
+
   header h1 {
     font-size: 50px;
     padding-right: 5%;
@@ -45,12 +48,12 @@
       padding-bottom: 0; }
 
   .intro {
-    margin-bottom: 15%; }
+    margin-bottom: 10%; }
     .intro h2 {
       font-size: 30px; }
 
   .specials {
-    margin-bottom: 30%; }
+    margin-bottom: 10%; }
 
   .carousel-cell {
     -webkit-flex-direction: row; }
