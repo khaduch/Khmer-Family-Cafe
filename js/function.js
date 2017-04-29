@@ -16,8 +16,12 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 
-			    
+
 	});
 
 
+});
+
+$(".clearfix li").on('click', function () {
+    $('.menu').toggleClass('open');
 });
