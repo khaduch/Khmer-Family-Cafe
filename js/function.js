@@ -15,8 +15,12 @@ $(document).ready(function(){
 	    }, 1000, 'swing', function () {
 	        window.location.hash = target;
 	    });
-
-
+	    // if the input checkbox is checked, clear it to return the
+	    // hamburger icon from the X shape to the hamburger
+	    if ( $( ".hamburger input" ).attr( "checked", true )) { 
+		// Uncheck the input
+		$( ".hamburger input" ).attr( "checked", false );
+	    }
 	});
 
 
