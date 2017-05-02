@@ -121,7 +121,7 @@
    */
   .hamburger input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px); }
+    transform: rotate(45deg) translate(-20px, -19px); }
 
   /*
    * But let's hide the middle one.
