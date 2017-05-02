@@ -26,6 +26,7 @@
 	<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 </head>
 
 <body>
@@ -40,9 +41,12 @@
 				</header>
 
 			    <div class="hamburger">
-				    <div class="line"></div>
-				    <div class="line"></div>
-				    <div class="line"></div>
+	
+					<input type="checkbox" />
+
+				    <span></span>
+				    <span></span>
+				    <span></span>
 			    </div>
 			    <ul class="clearfix menu">
 				    <li><a href="#home">Home</a></li>
@@ -67,7 +71,7 @@
 		<div class="row specials" id="daily-specials">
 			<h2 class="text-center daily-specials">Daily Specials</h2>
 			<!-- Flickity HTML init -->
-			<div class="carousel js-flickity" id="carousel" data-flickity='{ "pageDots": false }'></div>
+			<div class="carousel js-flickity" id="carousel" data-flickity='{ "pageDots": false, "adaptiveHeight": true }'></div>
 		</div>
 
 	<!-- 		Menu 					-->
@@ -90,7 +94,7 @@
 		<!-- 		Catering 		-->
 		<div class="col-xs-12 catering">
 			<img src="images/catering.jpg" class="img-responsive">
-			<div class="info">
+			<div class="info col-lg-6">
 				<h2 class="text-center" id="catering">Have A Large Party or a Special Event? We Cater to You!</h2>			
 				<p>We also do catering for groups of various sizes for special events and get togethers. Call us for information on
 				prices and details.</p>			
@@ -98,9 +102,9 @@
 		</div>
 
 		<!-- 		Who We Are 		-->
-		<div class="col-xs-12 about">
+		<div class="col-xs-12 about row-reverse">
 			<img src="images/family-cheers.jpg" class="img-responsive">
-			<div class="info">
+			<div class="info col-lg-6">
 				<h2 class="text-center" id="who-we-are">Who We Are</h2>
 				<p>We are a small family-owned restaurant local to Fresno. We pride ourselves in offering fresh homestyle Khmer cuisine
 				native to Cambodia. Our services include dine-in, carryout, and even catering. Opened since July 2016, we also host special
@@ -179,5 +183,7 @@
 	<script type="text/javascript" src="js/specials.js"></script>
 
 	<script type="text/javascript" src="js/function.js"></script>
+
+
 </body>
 </html>
